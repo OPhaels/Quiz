@@ -506,7 +506,6 @@ document.addEventListener("DOMContentLoaded", () => {
     loadQuestions(subject);
   } else {
     alert("Nenhuma matéria selecionada. Volte para a página inicial.");
-    window.location.href = "home.html";
   }
 
   const checkAnswersButton = document.getElementById("check-answers");
