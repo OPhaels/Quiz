@@ -494,7 +494,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("selectedSubject", subject);
         window.location.href = "index.html";
       } else {
-        alert("Por favor, selecione uma matéria.");
+        /*Nada acontece*/
       }
     };
   }
@@ -505,8 +505,7 @@ document.addEventListener("DOMContentLoaded", () => {
       subject.charAt(0).toUpperCase() + subject.slice(1).replace("_", " ");
     loadQuestions(subject);
   } else {
-    alert("Nenhuma matéria selecionada. Volte para a página inicial.");
-    window.location.href = "index.html";
+    alert("Selecione uma matéria para acessar as perguntas, boa sorte!");
   }
 
   const checkAnswersButton = document.getElementById("check-answers");
