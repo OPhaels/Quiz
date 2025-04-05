@@ -492,7 +492,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (subject) {
         localStorage.setItem("selectedSubject", subject);
-        window.location.href = "index.html";
+        window.location.href = "home.html";
       } else {
         /*Nada acontece*/
       }
