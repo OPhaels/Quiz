@@ -433,8 +433,10 @@ function loadQuestions(subject) {
       ${shuffledOptions
         .map(
           (option, i) => `
-        <input type="radio" name="question${index}" value="${i}" id="q${index}o${i}" class="quiz-option">
-        <label for="q${index}o${i}" class="quiz-label">${option.text}</label><br>
+        <div class="option-container">
+          <input type="radio" name="question${index}" value="${i}" id="q${index}o${i}" class="quiz-option">
+          <label for="q${index}o${i}" class="quiz-label">${option.text}</label>
+        </div>
       `
         )
         .join("")}
@@ -448,6 +450,8 @@ function loadQuestions(subject) {
 
 function checkAnswers() {
   if (!window.currentQuestions) return;
+
+  let correctCount = 0;
 
   window.currentQuestions.forEach((q, index) => {
     const selected = document.querySelector(
@@ -467,6 +471,7 @@ function checkAnswers() {
       const correctValue = q.correct;
 
       if (selectedValue === correctValue) {
+        correctCount++;
         selected.nextElementSibling.style.backgroundColor = "green";
         selected.nextElementSibling.style.color = "white";
       } else {
@@ -481,6 +486,11 @@ function checkAnswers() {
       correctLabel.style.color = "white";
     }
   });
+
+  // Exibir pontuação
+  const scoreDisplay = document.getElementById("score-counter");
+  scoreDisplay.textContent = `Você acertou ${correctCount} de ${window.currentQuestions.length} perguntas!`;
+  scoreDisplay.style.display = "block";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -493,35 +503,40 @@ document.addEventListener("DOMContentLoaded", () => {
       if (subject) {
         localStorage.setItem("selectedSubject", subject);
         window.location.href = "home.html";
-      } else {
-        /*Nada acontece*/
-      }
-    };
-  }
-
-  const subject = localStorage.getItem("selectedSubject");
-  if (subject) {
-    document.getElementById("materia-titulo").textContent =
-      subject.charAt(0).toUpperCase() + subject.slice(1).replace("_", " ");
-    loadQuestions(subject);
-  } else {
-    alert("Selecione uma matéria para acessar as perguntas, boa sorte!");
-  }
-
-  const checkAnswersButton = document.getElementById("check-answers");
-  if (checkAnswersButton) {
-    checkAnswersButton.onclick = function () {
-      checkAnswers();
-    };
-  }
-
-  const reloadQuizButton = document.getElementById("reload-quiz");
-  if (reloadQuizButton) {
-    reloadQuizButton.onclick = function () {
-      const subject = localStorage.getItem("selectedSubject");
-      if (subject) {
-        loadQuestions(subject); // Carrega 10 novas perguntas aleatórias
       }
     };
   }
 });
+
+const subject = localStorage.getItem("selectedSubject");
+if (subject) {
+  const titulo = document.getElementById("materia-titulo");
+  if (titulo) {
+    titulo.textContent =
+      subject.charAt(0).toUpperCase() + subject.slice(1).replace("_", " ");
+  }
+  loadQuestions(subject);
+} else {
+  alert("Selecione uma matéria para acessar as perguntas, boa sorte!");
+}
+
+const checkAnswersButton = document.getElementById("check-answers");
+if (checkAnswersButton) {
+  checkAnswersButton.onclick = function () {
+    checkAnswers();
+  };
+}
+const reloadQuizButton = document.getElementById("reload-quiz");
+if (reloadQuizButton) {
+  reloadQuizButton.onclick = function () {
+    const subject = localStorage.getItem("selectedSubject");
+    if (subject) {
+      loadQuestions(subject);
+
+      // Esconde e zera o contador de acertos
+      const scoreDisplay = document.getElementById("score-counter");
+      scoreDisplay.textContent = "";
+      scoreDisplay.style.display = "none";
+    }
+  };
+}

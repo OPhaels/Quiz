@@ -10,10 +10,12 @@
   <body>
     <header>
       <div class="logo">
-              <a href="index.html"><img src="botao-home.png" alt="Home" /></a>
-            <div class="btns-top">
+        <div class="box">
+              <button id="btns-top" onclick="localStorage.removeItem('selectedSubject'); window.location.href = 'index.html';">Trocar Matéria</button>
               <button id="reload-quiz">Refazer Perguntas</button>
+              </div>
               <h1 id="materia-titulo">Matéria</h1>
+              <p id="score-counter" style="display: none; font-weight: bold; font-size: 18px;"></p>
             </div>
           </div>
           <h2 id="materia-descricao"></h2>
