@@ -492,7 +492,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (subject) {
         localStorage.setItem("selectedSubject", subject);
-        window.location.href = "home.html";
+        window.location.href = "index.html";
       } else {
         alert("Por favor, selecione uma matéria.");
       }
@@ -506,7 +506,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadQuestions(subject);
   } else {
     alert("Nenhuma matéria selecionada. Volte para a página inicial.");
-    window.location.href = "home.html";
+    window.location.href = "index.html";
   }
 
   const checkAnswersButton = document.getElementById("check-answers");
