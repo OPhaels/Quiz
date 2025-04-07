@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <title>Quiz</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <div class="box">
-              <button id="btns-top" onclick="localStorage.removeItem('selectedSubject'); window.location.href = 'index.html';">Trocar Matéria</button>
-              <button id="reload-quiz">Refazer Perguntas</button>
-              </div>
-              <h1 id="materia-titulo">Matéria</h1>
-              <p id="score-counter" style="display: none; font-weight: bold; font-size: 18px;"></p>
-            </div>
-          </div>
-          <h2 id="materia-descricao"></h2>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <section>
-        <ul class="quiz-list"></ul>
-        <button id="check-answers">Verificar Respostas</button>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <title>Quiz</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <div class="box">
+        <button id="btns-top"
+          onclick="localStorage.removeItem('selectedSubject'); window.location.href = 'index.html';">Trocar
+          Matéria</button>
+        <button id="reload-quiz">Refazer Perguntas</button>
+      </div>
+      <h1 id="materia-titulo">Matéria</h1>
+      <p id="score-counter" style="display: none; font-weight: bold; font-size: 18px;"></p>
+    </div>
+    </div>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <ul class="quiz-list"></ul>
+      <button id="check-answers">Verificar Respostas</button>
+    </section>
+  </main>
+</body>
+
 </html>

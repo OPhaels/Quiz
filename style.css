@@ -5,15 +5,16 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #e0e1dd;
+  background-color: #eaebe0;
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .logo {
   width: 100%;
   height: auto;
   max-height: 320px;
-  background: #0d1b2a;
+  background: #000957;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.664);
   margin: none;
   padding: 30px;
@@ -22,22 +23,23 @@ body {
 }
 
 h1 {
-  line-height: 1.1;
+  line-height: 1.2;
   font-size: 5rem;
   padding: 20px;
   font-weight: lighter;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: white;
+  color: #ffeb00;
+  font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 5px black;
   margin: 20px 0;
+  font-family: "Bungee", cursive;
 }
 
 h2 {
   margin: 20px;
   text-align: center;
-  color: white;
-  text-shadow: 1px 1px 5px black;
+  color: #f5e214;
+  text-shadow: 1px 1px 1px black;
   font-size: 4vw;
 }
 
@@ -52,7 +54,7 @@ ul {
 }
 
 li {
-  background: #152941;
+  background: #344cb7;
   box-shadow: 0px 0px 5px rgba(236, 236, 236, 0.788);
   margin: 20px auto;
   padding: 30px;
@@ -71,7 +73,7 @@ input {
   display: block;
   padding: 15px 20px;
   border: 1px solid #ffffff;
-  background: #0d1b2a;
+  background: #000957;
   border-radius: 5px;
   cursor: pointer;
   margin: 8px auto;
@@ -86,8 +88,8 @@ input {
 }
 
 .quiz-label:hover {
-  background-color: #f0f0f0;
-  color: black;
+  background-color: #ffeb00;
+  color: white;
 }
 
 .quiz-option {
@@ -108,19 +110,23 @@ input {
   border-radius: 5px;
   font-size: 15pt;
   cursor: pointer;
-  background-color: #152941;
+  background-color: #000957;
   color: white;
   font-weight: bold;
 }
 
 #check-answers:hover {
-  background-color: #035941;
+  background-color: #577bc1;
   color: white;
   transition: 300ms ease-in-out;
 }
 
 #reload-quiz,
 #btns-top {
+  font-family: "Bungee", cursive;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.719);
   max-width: 15em;
   min-width: 8em;
   border-radius: 5px;
@@ -128,7 +134,7 @@ input {
 }
 #reload-quiz:hover,
 #btns-top:hover {
-  background: #121a20;
+  background: #344cb7;
   color: white;
 }
 .btns-top {
@@ -176,7 +182,7 @@ p {
   border: 1px solid #3d53a3;
   line-height: 45px;
   height: 50px;
-  background: #526dce;
+  background: #344cb7;
   text-shadow: 0 0 5px black;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
 }

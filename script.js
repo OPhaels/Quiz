@@ -436,6 +436,7 @@ function loadQuestions(subject) {
         <div class="option-container">
           <input type="radio" name="question${index}" value="${i}" id="q${index}o${i}" class="quiz-option">
           <label for="q${index}o${i}" class="quiz-label">${option.text}</label>
+          <p class="ansers"><p>
         </div>
       `
         )
@@ -475,15 +476,24 @@ function checkAnswers() {
         selected.nextElementSibling.style.backgroundColor = "green";
         selected.nextElementSibling.style.color = "white";
       } else {
-        selected.nextElementSibling.style.backgroundColor = "red";
-        selected.nextElementSibling.style.color = "white";
-      }
+        const selectedLabel = selected.nextElementSibling;
+        selectedLabel.style.backgroundColor = "#f7c5c5";
+        selectedLabel.style.color = "red";
+        selectedLabel.style.border = "2px solid red";
 
+        const correctLabel = document.querySelector(
+          `input[name='question${index}'][value='${correctValue}']`
+        ).nextElementSibling;
+        correctLabel.style.color = "green";
+        correctLabel.style.border = "2px dashed green";
+      }
+    } else {
       const correctLabel = document.querySelector(
-        `input[name='question${index}'][value='${correctValue}']`
+        `input[name='question${index}'][value='${q.correct}']`
       ).nextElementSibling;
-      correctLabel.style.backgroundColor = "green";
-      correctLabel.style.color = "white";
+
+      correctLabel.style.border = "2px dashed green";
+      correctLabel.style.color = "green";
     }
   });
 
