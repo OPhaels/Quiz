@@ -88,8 +88,8 @@ input {
 }
 
 .quiz-label:hover {
-  background-color: white;
-  color: blue;
+  background-color: #ffeb00;
+  color: white;
 }
 
 .quiz-option {
