@@ -471,29 +471,49 @@ function checkAnswers() {
       const selectedValue = parseInt(selected.value);
       const correctValue = q.correct;
 
+      // Primeiro, deixa todos os labels da pergunta com opacidade 0.3
+      const allOptions = document.querySelectorAll(
+        `input[name='question${index}']`
+      );
+      allOptions.forEach((opt) => {
+        opt.nextElementSibling.style.opacity = "0.3";
+      });
+
       if (selectedValue === correctValue) {
         correctCount++;
         selected.nextElementSibling.style.backgroundColor = "green";
         selected.nextElementSibling.style.color = "white";
+        selected.nextElementSibling.style.opacity = "1"; // mantém visível
       } else {
         const selectedLabel = selected.nextElementSibling;
         selectedLabel.style.backgroundColor = "#f7c5c5";
         selectedLabel.style.color = "red";
         selectedLabel.style.border = "2px solid red";
+        selectedLabel.style.opacity = "1"; // mantém visível
 
         const correctLabel = document.querySelector(
           `input[name='question${index}'][value='${correctValue}']`
         ).nextElementSibling;
         correctLabel.style.color = "green";
         correctLabel.style.border = "2px dashed green";
+        correctLabel.style.opacity = "1"; // mantém visível
       }
     } else {
+      // Nenhuma resposta selecionada: apenas destaque a correta
+      const allOptions = document.querySelectorAll(
+        `input[name='question${index}']`
+      );
+      allOptions.forEach((opt) => {
+        opt.nextElementSibling.style.opacity = "0.3";
+      });
+
       const correctLabel = document.querySelector(
         `input[name='question${index}'][value='${q.correct}']`
       ).nextElementSibling;
 
       correctLabel.style.border = "2px dashed green";
       correctLabel.style.color = "green";
+      correctLabel.style.opacity = "1"; // mantém visível
     }
   });
 
