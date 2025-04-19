@@ -3,18 +3,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cor-primaria: #000957;
+  --cor-secundaria: #577bc1;
+  --cor-fundo: #e4e0e1;
+  --cor-texto: #344cb7;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #f6f7f3;
+  background-color: var(--cor-fundo);
   color: white;
 }
 
 .logo {
   width: 100%;
-  font-family: "Times New Roman", Times, serif;
   height: auto;
   max-height: 320px;
-  background: #000957;
+  background: var(--cor-primaria);
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.829);
   margin: none;
   padding: 30px;
@@ -27,7 +33,7 @@ h1 {
   padding: 20px;
   font-weight: lighter;
   text-align: center;
-  color: #f1f1f1;
+  color: var(--cor-fundo);
   font-family: serif;
   text-shadow: 1px 1px 5px black;
 }
@@ -35,8 +41,8 @@ h1 {
 h2 {
   margin: 20px;
   text-align: center;
-  color: #3232da;
-  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.425);
+  color: var(--cor-primaria);
+  text-shadow: 2px 2px 12px rgb(255, 255, 255);
   font-size: 3vw;
 }
 
@@ -52,15 +58,15 @@ ul {
 }
 
 li {
-  background: #022c7aa2;
-  box-shadow: 0px 0px 5px rgba(236, 236, 236, 0.788);
+  background: var(--cor-primaria);
+  box-shadow: 0px 0px 5px rgb(236, 236, 236);
   margin: 30px auto;
   padding: 30px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   max-width: 100%;
   width: 95%;
-  font-weight: bolder;
+  box-shadow: 0 0 5px black;
 }
 
 input {
@@ -72,23 +78,24 @@ input {
   display: block;
   padding: 15px 20px;
   border: 1px solid #ffffff;
-  background: #000957;
+  box-shadow: 0 0 10px black;
+  background: var(--cor-secundaria);
   border-radius: 5px;
   cursor: pointer;
   margin: 8px auto;
-  width: 90%;
+  width: 99%;
   text-align: left;
 }
 
 #mat {
-  color: black;
+  color: var(--cor-fundo);
   font-size: 18pt;
   margin: 20px;
 }
 
 .quiz-label:hover {
   background-color: white;
-  color: blue;
+  color: var(--cor-texto);
 }
 
 .quiz-option {
@@ -102,22 +109,23 @@ input {
 
 #check-answers {
   margin: 20px auto;
-  width: 90%;
+  width: 95%;
   display: block;
   padding: 20px;
   border: none;
   border-radius: 5px;
   font-size: 15pt;
   cursor: pointer;
-  background-color: #000957;
+  background-color: var(--cor-secundaria);
   color: white;
   font-weight: bold;
 }
 
 #check-answers:hover {
-  background-color: #577bc1;
-  color: white;
+  background-color: var(--cor-primaria);
+  color: var(--cor-fundo);
   transition: 300ms ease-in-out;
+  box-shadow: 0 0 2px black;
 }
 
 #reload-quiz,
@@ -129,13 +137,14 @@ input {
   max-width: 10em;
   min-width: 9em;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 20px;
   font-size: 15pt;
 }
 #reload-quiz:hover,
 #btns-top:hover {
-  background: #e9c62d;
+  background: var(--cor-secundaria);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
   color: white;
 }
 .btns-top {
@@ -151,14 +160,13 @@ button {
   padding: 5px;
   width: 100%;
   margin-bottom: 10px;
-  font-size: 22px;
   text-align: center;
+  font-size: 16pt;
 }
 
 p {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 15px;
   line-height: 1.4;
 }
 .exp {
@@ -169,34 +177,28 @@ p {
 }
 
 .exp p {
-  margin: 30px;
+  margin: px;
 }
 .butt {
-  width: 200px;
+  width: 50px;
   margin: auto;
-  padding: 2px;
+  padding: 4px;
   border-radius: 5px;
   font-size: 20px;
-  color: white;
   text-align: center;
-  border: 1px solid #3d53a3fa;
   line-height: 45px;
   height: 50px;
-  background: #4747eb;
-  text-shadow: 0 0 5px black;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
 }
 .butt:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 8px #97aaee;
+  box-shadow: 0px 0px 8px;
   animation: both;
   transition: 500ms ease-in;
 }
 
 .discord img {
-  width: 40px;
+  width: 100%;
   border-radius: 100%;
-  margin: 3px;
   position: static;
   float: left;
 }
@@ -259,11 +261,14 @@ p {
   margin: 25px 0;
   width: 80%;
   padding: 15px;
+  opacity: 80%;
 }
 
 #start-quiz {
-  color: yellow;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.363);
+  color: var(--cor-texto);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.363);
+  font-weight: bold;
+  font-weight: bold;
 }
 
 .question-text {
