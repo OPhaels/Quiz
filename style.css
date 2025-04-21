@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  font-size: 8em;
+  font-size: 5em;
   padding: 20px;
   font-weight: lighter;
   text-align: center;
@@ -206,7 +206,7 @@ p {
 /* Responsividade geral */
 @media (max-width: 798px) {
   h1 {
-    font-size: 12vw;
+    font-size: 9vw;
   }
 
   h2 {
@@ -225,7 +225,7 @@ p {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 11vw;
+    font-size: 6vw;
   }
 
   h2 {
