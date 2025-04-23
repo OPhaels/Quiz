@@ -810,6 +810,7 @@ function checkAnswers() {
   const scoreDisplay = document.getElementById("score-counter");
   scoreDisplay.textContent = `Você acertou ${correctCount} de ${window.currentQuestions.length} perguntas!`;
   scoreDisplay.style.display = "block";
+  scoreDisplay.style.color = "Yellow";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
