@@ -435,250 +435,210 @@ const questions = {
   ],
   fundamentos: [
     {
-      question: "O que é um Sistema de Informação (SI)?",
+      question: "Sobre o conceito de CRM, assinale a alternativa correta:",
       options: [
-        "Um software de design",
-        "Conjunto de elementos que coleta, processa e distribui informações",
-        "Um hardware para processamento gráfico",
-        "Um tipo de rede de internet",
+        "CRM é um sistema focado apenas na logística de transporte e armazenagem de produtos.",
+        "CRM é um modelo de gestão voltado exclusivamente para fornecedores e cadeia de suprimentos.",
+        "CRM é utilizado para monitorar exclusivamente o desempenho de máquinas e sistemas.",
+        "CRM é um conjunto de estratégias com foco no cliente, visando entender e antecipar suas necessidades.",
       ],
-      correct: 1,
+      correct: 3,
     },
     {
-      question: "Um dos principais objetivos dos SI é:",
+      question:
+        "Em relação a dados, informação e conhecimento, qual afirmativa está correta?",
       options: [
-        "Aumentar o uso de papel",
-        "Eliminar todos os cargos administrativos",
-        "Apoiar a tomada de decisões",
-        "Desligar computadores automaticamente",
-      ],
-      correct: 2,
-    },
-    {
-      question: "ERP é um tipo de sistema usado para:",
-      options: [
-        "Controle financeiro pessoal",
-        "Gerenciar recursos empresariais",
-        "Redes sociais",
-        "Envio de e-mails",
-      ],
-      correct: 1,
-    },
-    {
-      question: "CRM é um sistema voltado para:",
-      options: [
-        "Gestão de estoque",
-        "Gestão do relacionamento com o cliente",
-        "Automação de fábrica",
-        "Controle de ponto",
-      ],
-      correct: 1,
-    },
-    {
-      question: "A informação se diferencia do dado porque:",
-      options: [
-        "Dados são sempre corretos",
-        "Informação é dado processado com significado",
-        "Dados são imagens e informação são textos",
-        "Informação é sempre digital",
-      ],
-      correct: 1,
-    },
-    {
-      question: "O que é Business Intelligence (BI)?",
-      options: [
-        "Análise de tendências musicais",
-        "Ferramenta de redes sociais",
-        "Conjunto de técnicas para análise de dados e apoio à decisão",
-        "Sistema de segurança digital",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Um exemplo de entrada em um SI é:",
-      options: [
-        "Relatório impresso",
-        "Decisão gerencial",
-        "Dados inseridos por um usuário",
-        "Mensagem de erro",
-      ],
-      correct: 2,
-    },
-    {
-      question: "A saída de um sistema de informação pode ser:",
-      options: [
-        "Um banco de dados",
-        "Informações geradas para usuários",
-        "Dados brutos",
-        "Fontes de alimentação",
-      ],
-      correct: 1,
-    },
-    {
-      question: "Qual é a função do banco de dados em um SI?",
-      options: [
-        "Transmitir energia ao servidor",
-        "Armazenar e organizar os dados utilizados e produzidos",
-        "Gerar gráficos em tempo real",
-        "Fornecer senhas",
+        "Dados e conhecimento são a mesma coisa e têm estrutura idêntica.",
+        "Informações são dados organizados e com significado, úteis na tomada de decisão.",
+        "Conhecimento é mais fácil de modelar e transferir que dados.",
+        "Dados são conclusões extraídas de informações bem estruturadas.",
       ],
       correct: 1,
     },
     {
       question:
-        "Qual profissional geralmente está envolvido na análise de sistemas?",
+        "Qual dos itens abaixo não é uma etapa do Planejamento Estratégico de TI?",
       options: [
-        "Engenheiro civil",
-        "Médico",
-        "Analista de sistemas",
-        "Designer gráfico",
-      ],
-      correct: 2,
-    },
-    {
-      question: "A sigla TI significa:",
-      options: [
-        "Transporte Interno",
-        "Tecnologia da Informação",
-        "Tráfego Instantâneo",
-        "Técnico de Imagem",
-      ],
-      correct: 1,
-    },
-    {
-      question: "O que caracteriza um sistema de apoio à decisão (SAD)?",
-      options: [
-        "Suporte para decisões operacionais e estratégicas",
-        "Controle de estoques em tempo real",
-        "Design gráfico de aplicativos",
-        "Gestão de RH automatizada",
+        "Cursos online com realidade virtual e aumentada para todos os funcionários.",
+        "Definir missão, visão e valores da empresa.",
+        "Diagnóstico estratégico com Matriz SWOT.",
+        "Estabelecer objetivos estratégicos, como retorno sobre investimentos.",
       ],
       correct: 0,
     },
     {
-      question: "Big Data se refere a:",
+      question: "O ciclo de vida de um software corresponde a:",
       options: [
-        "Jogos em realidade virtual",
-        "Grandes volumes de dados gerados constantemente",
-        "Imagens em alta resolução",
-        "Servidores com problemas",
-      ],
-      correct: 1,
-    },
-    {
-      question: "Em SI, o termo 'interface' refere-se a:",
-      options: [
-        "Área de design gráfico",
-        "Canal de comunicação entre o usuário e o sistema",
-        "Código-fonte principal",
-        "Banco de dados interno",
-      ],
-      correct: 1,
-    },
-    {
-      question: "Sistemas transacionais são focados em:",
-      options: [
-        "Design 3D",
-        "Redes sociais",
-        "Rotinas operacionais e repetitivas",
-        "Jogos digitais",
-      ],
-      correct: 2,
-    },
-    {
-      question:
-        "Qual tecnologia costuma ser usada para proteger informações em sistemas?",
-      options: ["HTML", "CSS", "Criptografia", "Excel"],
-      correct: 2,
-    },
-    {
-      question: "O que é um Dashboard em BI?",
-      options: [
-        "Um painel de controle visual com indicadores e métricas",
-        "Um botão de acesso ao sistema",
-        "Uma função de limpeza de dados",
-        "Uma rede de usuários",
+        "As etapas que um software percorre, da concepção até sua descontinuação.",
+        "O tempo de vida útil do hardware onde o software está instalado.",
+        "O prazo de garantia de um sistema de software comercial.",
+        "O ciclo de produção de peças de hardware que executam software.",
       ],
       correct: 0,
     },
     {
-      question: "Um exemplo de dado estruturado é:",
-      options: [
-        "Imagem PNG",
-        "Vídeo no YouTube",
-        "Tabela em banco de dados",
-        "Áudio em MP3",
-      ],
+      question:
+        "Qual é a representação correta dos números decimais 15, 16 e 17 no sistema hexadecimal?",
+      options: ["15, 16, 17", "F, 11, 12", "F, 10, 11", "F, 15, 16"],
       correct: 2,
     },
     {
-      question: "O termo 'automação de processos' significa:",
+      question:
+        "Qual das alternativas apresenta características corretas sobre sistemas ERP?",
       options: [
-        "Desligar computadores",
-        "Eliminar todos os funcionários",
-        "Executar tarefas com mínima intervenção humana",
-        "Criar apresentações de slides",
+        "São desenvolvidos apenas internamente pelas empresas e não seguem padrões.",
+        "Utilizam bancos de dados não relacionais e operam sem integração entre setores.",
+        "São voltados apenas para gestão de pequenas empresas, sem escalabilidade.",
+        "São pacotes de software modulares que integram processos, usam banco relacional e seguem boas práticas.",
       ],
-      correct: 2,
+      correct: 3,
     },
     {
-      question: "O que é necessário para um sistema funcionar adequadamente?",
+      question:
+        "Qual princípio dos Sistemas de Informação é essencial para a gestão do conhecimento?",
       options: [
-        "Somente hardware",
-        "Somente software",
-        "Integração entre pessoas, processos e tecnologia",
-        "Wi-Fi de alta velocidade",
-      ],
-      correct: 2,
-    },
-    {
-      question: "A governança de TI busca:",
-      options: [
-        "Reduzir o uso de software",
-        "Controlar o tempo dos funcionários",
-        "Alinhar TI com os objetivos estratégicos da organização",
-        "Gerar relatórios visuais",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Um sistema legado é aquele que:",
-      options: [
-        "Foi herdado de um sistema em nuvem",
-        "Está sempre atualizado",
-        "É antigo, mas ainda em uso",
-        "É utilizado apenas em celulares",
-      ],
-      correct: 2,
-    },
-    {
-      question: "A arquitetura de um SI define:",
-      options: [
-        "A velocidade de internet",
-        "A estrutura organizacional da empresa",
-        "Componentes e forma de integração do sistema",
-        "A paleta de cores da interface",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Transformação digital está relacionada a:",
-      options: [
-        "Impressão de documentos",
-        "Mudança nos canais de comunicação apenas",
-        "Uso estratégico de tecnologia para inovação nos negócios",
-        "Comprar computadores novos",
+        "Isolamento dos setores da empresa.",
+        "Centralização de decisões em uma única pessoa.",
+        "Compartilhamento de informações entre setores.",
+        "Proibição de acesso remoto aos sistemas.",
       ],
       correct: 2,
     },
     {
       question:
-        "O ciclo de vida de um sistema de informação inclui etapas como:",
+        "Quais são os principais componentes de uma arquitetura de computadores?",
       options: [
-        "Reunião, marketing, entrega",
-        "Análise, desenvolvimento, testes e manutenção",
-        "Compra, instalação e uso",
-        "Design, pintura e exportação",
+        "Memória principal, ULA, unidade de controle e dispositivos de entrada/saída.",
+        "CPU, modem, impressora e sistema operacional.",
+        "Banco de dados, software, drivers e interface gráfica.",
+        "Planilhas, arquivos de texto, software de edição e teclado.",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Qual é o objetivo principal da Política de Segurança da Informação (PSI)?",
+      options: [
+        "Restringir o uso de internet para os funcionários.",
+        "Impedir o uso de software de código aberto.",
+        "Estabelecer regras para o uso e proteção de informações organizacionais.",
+        "Controlar a produtividade dos funcionários com rastreamento constante.",
+      ],
+      correct: 2,
+    },
+    {
+      question: "Quais são os processos que compõem um Sistema de Informação?",
+      options: [
+        "Processamento, desligamento, backup e reinício.",
+        "Entrada, processamento, saída e feedback.",
+        "Registro, impressão, compactação e envio.",
+        "Leitura, criptografia, envio e eliminação.",
+      ],
+      correct: 1,
+    },
+    {
+      question: "De acordo com Laudon, um Sistema de Informação é:",
+      options: [
+        "Um hardware especializado em processamento gráfico de informações.",
+        "Um conjunto de componentes interligados que coletam, processam, armazenam e distribuem informações.",
+        "Um programa específico usado em laboratórios.",
+        "Um modelo de segurança com foco em redes sociais.",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "O conceito descrito como um conjunto de atividades logicamente relacionadas que coordenam o trabalho em uma empresa é:",
+      options: [
+        "Processo de Negócio.",
+        "Arquitetura de Hardware.",
+        "Linguagem de Programação.",
+        "Protocolo de Comunicação.",
+      ],
+      correct: 0,
+    },
+    {
+      question: "O que é um Sistema de Apoio à Decisão (SAD)?",
+      options: [
+        "Um sistema que substitui a tomada de decisão humana por completo.",
+        "Um sistema que auxilia os gestores na tomada de decisões, com base em dados e modelos analíticos.",
+        "Um sistema voltado exclusivamente para o controle de acesso físico à empresa.",
+        "Um sistema que realiza cálculos matemáticos sem interferência em processos empresariais.",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "Qual a função principal de um sistema SCM (Supply Chain Management)?",
+      options: [
+        "Controlar exclusivamente o estoque da empresa.",
+        "Gerenciar toda a cadeia de suprimentos, desde fornecedores até a entrega ao cliente final.",
+        "Criar campanhas de marketing em redes sociais.",
+        "Monitorar o tempo de resposta de servidores de e-mail.",
+      ],
+      correct: 1,
+    },
+    {
+      question: "A sigla SGSI se refere a que tipo de sistema?",
+      options: [
+        "Sistema de Gerenciamento de Serviços Industriais.",
+        "Sistema Global de Segurança Integrada.",
+        "Sistema de Gestão de Segurança da Informação.",
+        "Sistema de Gerência de Sistemas de Internet.",
+      ],
+      correct: 2,
+    },
+    {
+      question:
+        'Qual das opções melhor define o conceito de "feedback" em sistemas de informação?',
+      options: [
+        "A avaliação final de desempenho do usuário.",
+        "A devolutiva do sistema para reavaliar processos e permitir ajustes.",
+        "A quantidade de cliques em uma página de internet.",
+        "A velocidade com que um software carrega os dados.",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "O que caracteriza o Modelo em Cascata de desenvolvimento de software?",
+      options: [
+        "Um processo caótico e desorganizado de desenvolvimento iterativo.",
+        "Um ciclo de vida baseado em atualizações contínuas e testes simultâneos.",
+        "Um modelo linear e sequencial com etapas rígidas e definidas.",
+        "Um modelo usado apenas em ambientes de prototipação rápida.",
+      ],
+      correct: 2,
+    },
+    {
+      question:
+        "Qual das alternativas representa um benefício direto da implantação de um sistema ERP?",
+      options: [
+        "Redução da comunicação entre setores.",
+        "Integração dos processos e informações de toda a empresa em um único sistema.",
+        "Substituição completa da força de trabalho por automação.",
+        "Centralização de dados apenas no setor financeiro.",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "Em relação à TI nas empresas, o termo “Governança de TI” refere-se a:",
+      options: [
+        "A capacidade do setor de TI de desenvolver softwares de forma autônoma.",
+        "A restrição do acesso a redes sociais no ambiente corporativo.",
+        "A definição de políticas sobre a forma de descarte de lixo eletrônico.",
+        "O conjunto de processos que garantem que a TI esteja alinhada aos objetivos estratégicos da empresa.",
+      ],
+      correct: 3,
+    },
+    {
+      question: "Um Data Warehouse é mais utilizado para:",
+      options: [
+        "Armazenar arquivos de imagem e vídeo usados no marketing.",
+        "Consolidar grandes volumes de dados para análise e apoio à decisão.",
+        "Hospedar sites institucionais com alta performance.",
+        "Armazenar os dados temporários de sessões de usuários.",
       ],
       correct: 1,
     },
