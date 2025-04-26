@@ -644,6 +644,30 @@ const questions = {
     },
   ],
 };
+
+const escritas = [
+  {
+    escritaFundamentos: [
+      {
+        question:
+          "Imagine uma pequena empresa de móveis que não possui presença digital. Como CIO de TI, indique 5 ações práticas para modernizá-la.",
+        options: [
+          "A empresa pode melhorar criando um site para vendas online, adotando sistemas integrados como ERP e CRM para organização e relacionamento com clientes, garantindo a segurança das informações e capacitando os funcionários para usar essas tecnologias de forma eficiente.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Na área de TI, quais são três mecanismos de segurança conhecidos? Explique brevemente.",
+        options: [
+          "A segurança da informação pode ser reforçada com criptografia para proteger os dados, firewall e antivírus para evitar ataques, e VPN para garantir conexões seguras entre redes e dispositivos.",
+        ],
+        correct: 0,
+      },
+    ],
+  },
+];
+
 // Embaralhar array (usado para perguntas e opções)
 function shuffleArray(array) {
   return array
@@ -825,3 +849,39 @@ if (reloadQuizButton) {
     }
   };
 }
+
+const btnsTop = document.querySelectorAll("#btns-top");
+
+// Botão "Discursivas" é o terceiro (índice 2)
+btnsTop[2].addEventListener("click", () => {
+  const subject = localStorage.getItem("selectedSubject");
+  const questionContainer = document.querySelector(".quiz-list");
+
+  questionContainer.innerHTML = "";
+
+  const key = `escrita${subject.charAt(0).toUpperCase() + subject.slice(1)}`;
+
+  if (subject && escritas[0][key]) {
+    const questions = escritas[0][key];
+
+    questions.forEach((q, index) => {
+      const li = document.createElement("li");
+      li.classList.add("quiz-question");
+
+      li.innerHTML = `
+        <p class="question-text"><strong>Pergunta ${index + 1}:</strong> ${
+        q.question
+      }</p>
+        <div class="resposta-modelo">
+          <strong>Resposta:</strong>
+          <p>${q.options[0]}</p>
+        </div>
+      `;
+
+      questionContainer.appendChild(li);
+    });
+  } else {
+    questionContainer.innerHTML =
+      "<p>Não há questões discursivas disponíveis para esta matéria.</p>";
+  }
+});

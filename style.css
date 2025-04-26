@@ -131,7 +131,8 @@ input {
 }
 
 #reload-quiz,
-#btns-top {
+#btns-top,
+#discursivas-btn {
   font-weight: bold;
   padding: 8px;
   background: var(--cor-btn);
@@ -354,4 +355,15 @@ p {
 
 #score-counter {
   margin-top: -25px;
+}
+
+.resposta-modelo p {
+  color: rgb(60, 252, 60);
+  text-shadow: 0 0 2px white;
+
+  text-align: justify;
+}
+
+.question-text {
+  text-align: justify;
 }
