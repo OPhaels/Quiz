@@ -850,38 +850,38 @@ if (reloadQuizButton) {
   };
 }
 
-const btnsTop = document.querySelectorAll("#btns-top");
+const discursivaBtn = document.getElementById("btn-discursivas");
+if (discursivaBtn) {
+  discursivaBtn.addEventListener("click", () => {
+    const subject = localStorage.getItem("selectedSubject");
+    const questionContainer = document.querySelector(".quiz-list");
 
-// Botão "Discursivas" é o terceiro (índice 2)
-btnsTop[2].addEventListener("click", () => {
-  const subject = localStorage.getItem("selectedSubject");
-  const questionContainer = document.querySelector(".quiz-list");
+    questionContainer.innerHTML = "";
 
-  questionContainer.innerHTML = "";
+    const key = `escrita${subject.charAt(0).toUpperCase() + subject.slice(1)}`;
 
-  const key = `escrita${subject.charAt(0).toUpperCase() + subject.slice(1)}`;
+    if (subject && escritas[0][key]) {
+      const questions = escritas[0][key];
 
-  if (subject && escritas[0][key]) {
-    const questions = escritas[0][key];
+      questions.forEach((q, index) => {
+        const li = document.createElement("li");
+        li.classList.add("quiz-question");
 
-    questions.forEach((q, index) => {
-      const li = document.createElement("li");
-      li.classList.add("quiz-question");
+        li.innerHTML = `
+          <p class="question-text"><strong>Pergunta ${index + 1}:</strong> ${
+          q.question
+        }</p>
+          <div class="resposta-modelo">
+            <strong>Resposta:</strong>
+            <p>${q.options[0]}</p>
+          </div>
+        `;
 
-      li.innerHTML = `
-        <p class="question-text"><strong>Pergunta ${index + 1}:</strong> ${
-        q.question
-      }</p>
-        <div class="resposta-modelo">
-          <strong>Resposta:</strong>
-          <p>${q.options[0]}</p>
-        </div>
-      `;
-
-      questionContainer.appendChild(li);
-    });
-  } else {
-    questionContainer.innerHTML =
-      "<p>Não há questões discursivas disponíveis para esta matéria.</p>";
-  }
-});
+        questionContainer.appendChild(li);
+      });
+    } else {
+      questionContainer.innerHTML =
+        "<p>Não há questões discursivas disponíveis para esta matéria.</p>";
+    }
+  });
+}

@@ -19,13 +19,20 @@ body {
 
 .logo {
   width: 100%;
-  height: auto;
-  max-height: 320px;
   background: var(--cor-primaria);
-  margin: none;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.603);
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin-top: 20px; /* <<< Essa linha aqui! */
 }
 
 h1 {
@@ -130,33 +137,34 @@ input {
   box-shadow: 0 0 2px black;
 }
 
-#reload-quiz,
 #btns-top,
-#discursivas-btn {
-  font-weight: bold;
-  padding: 8px;
-  background: var(--cor-btn);
+#reload-quiz,
+#btn-discursivas {
+  background-color: #007bff;
+  text-shadow: 0 0 6px black;
   color: white;
-  max-width: 10em;
-  min-width: 9em;
   border: none;
-  border-radius: 10px;
-  margin: 20px;
-  font-size: 12pt;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap; /* Impede que o texto quebre dentro do botão */
+  min-width: 120px;
+  font-size: 10pt;
+  width: 150px; /* Opcional: deixa todos botões com largura mínima */
+  text-align: center;
 }
 #reload-quiz:hover,
-#btns-top:hover {
+#btns-top:hover,
+#btn-discursivas:hover {
   background: var(--cor-secundaria);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
   color: white;
 }
-.btns-top {
+#btns-top {
   text-align: center;
 }
 
-.box {
-  text-align: center;
-}
 .box button {
   flex: 1 1 auto;
   max-width: 48%;
@@ -222,7 +230,7 @@ p {
 /* Responsividade geral */
 @media (max-width: 720px) {
   h1#materia-titulo {
-    font-size: 7vw;
+    font-size: 8vw;
   }
 
   h2 {
@@ -241,6 +249,13 @@ p {
   .exp p {
     margin: 30px;
   }
+  button#btns-top,
+  button#reload-quiz,
+  button#btn-discursivas {
+    width: 30%;
+    font-size: 8pt;
+    padding: 15px 10px;
+  }
 }
 
 @media (max-width: 455px) {
@@ -251,22 +266,22 @@ p {
 
   .box p {
     font-size: 12pt;
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   .box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
+    flex-wrap: wrap;
   }
 
   #reload-quiz,
-  #btns-top {
-    padding: 15px 5px;
-    margin: 5px;
-    font-size: 3vw;
+  #btns-top,
+  #btn-discursivas {
+    padding: 10px;
+    gap: 5px;
     border: none;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -274,7 +289,8 @@ p {
   }
 
   #reload-quiz:hover,
-  #btns-top:hover {
+  #btns-top:hover,
+  #btn-discursivas {
     transform: scale(1.05);
   }
 
