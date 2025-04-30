@@ -4,15 +4,15 @@
 }
 
 :root {
-  --cor-primaria: #000957;
-  --cor-secundaria: #6586c7bd;
-  --cor-fundo: #e6e5e9;
-  --cor-texto: #4c5eb3;
-  --cor-btn: #007bff;
+  --cor-primaria: #070e50;
+  --cor-secundaria: #3d6dccbd;
+  --cor-fundo: #edebf1;
+  --cor-texto: #3650d3;
+  --cor-btn: #0661c2;
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
   background-color: var(--cor-fundo);
   color: white;
 }
@@ -30,12 +30,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 40px;
   flex-wrap: nowrap;
   margin-top: 20px; /* <<< Essa linha aqui! */
 }
 
 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 10px;
   font-size: 4em;
   padding: 20px;
@@ -140,7 +141,7 @@ input {
 #btns-top,
 #reload-quiz,
 #btn-discursivas {
-  background-color: #007bff;
+  background-color: #5196e0;
   text-shadow: 0 0 6px black;
   color: white;
   border: none;
@@ -214,12 +215,13 @@ p {
 
 .discord {
   background: #000957;
-  padding: 5px;
+  padding: 10px;
 }
 
 .discord img {
   margin: auto;
   width: 60px;
+  height: 60px;
   border-radius: 100%;
 }
 #score-counter {
@@ -239,22 +241,29 @@ p {
 
   li {
     padding: 20px;
-    margin: 15px auto;
+    margin: 10px auto;
   }
 
   .quiz-label {
-    font-size: 3vw;
+    font-size: 10pt;
   }
 
   .exp p {
     margin: 30px;
   }
+
+  #start-quiz {
+    font-size: 12pt;
+  }
   button#btns-top,
   button#reload-quiz,
   button#btn-discursivas {
     width: 30%;
+    gap: 10px;
     font-size: 8pt;
-    padding: 15px 10px;
+  }
+  .box {
+    gap: 10px;
   }
 }
 
@@ -270,28 +279,15 @@ p {
   }
 
   .box {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    padding: 10px;
-    flex-wrap: wrap;
-  }
-
-  #reload-quiz,
-  #btns-top,
-  #btn-discursivas {
-    padding: 10px;
-    gap: 5px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    flex-wrap: nowrap; /* mantém em linha */
+    justify-content: flex-start; /* alinha à esquerda para rolar */
   }
 
   #reload-quiz:hover,
   #btns-top:hover,
   #btn-discursivas {
     transform: scale(1.05);
+    gap: 2px;
   }
 
   h2 {
@@ -300,9 +296,9 @@ p {
   }
 
   p.question-text {
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 10px;
-    text-align: center;
+    text-align: justify;
   }
 
   li {
@@ -333,7 +329,7 @@ p {
 
   select {
     font-size: 16px;
-    padding: 6px;
+    padding: 7px;
     border-radius: 5px;
   }
 
@@ -343,7 +339,13 @@ p {
   }
 
   #score-counter {
-    font-size: 2vw;
+    font-size: 4vw;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    flex-wrap: wrap; /* mantém em linha */
+    justify-content: center;
   }
 }
 
@@ -351,7 +353,7 @@ p {
 #start-quiz {
   margin: 25px 0;
   width: 80%;
-  padding: 15px;
+  padding: 10px;
   opacity: 80%;
 }
 
@@ -359,14 +361,13 @@ p {
   color: var(--cor-texto);
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.363);
   font-weight: bold;
-  font-weight: bold;
 }
 
 .question-text {
   font-size: 16pt;
 }
 .quiz-question {
-  margin-bottom: 30px;
+  font-size: 12pt;
 }
 
 #score-counter {
@@ -376,10 +377,11 @@ p {
 .resposta-modelo p {
   color: rgb(60, 252, 60);
   text-shadow: 0 0 2px white;
-
   text-align: justify;
 }
 
 .question-text {
   text-align: justify;
+  font-size: 12pt;
+  margin: 10px 15px;
 }
