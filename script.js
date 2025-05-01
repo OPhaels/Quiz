@@ -1,436 +1,420 @@
 const questions = {
   arquitetura: [
     {
-      question: "O que caracteriza um banco de dados NoSQL?",
+      question:
+        "Quais são as principais limitações dos bancos de dados relacionais quando se trabalha com dados não estruturados?",
       options: [
-        "Uso exclusivo de SQL",
-        "Estrutura tabular rígida",
-        "Alta flexibilidade e escalabilidade",
-        "Compatibilidade apenas com Oracle",
+        "Dificuldade em armazenar grandes volumes de dados",
+        "Necessidade de esquema fixo",
+        "Baixa performance para operações complexas",
+        "Falta de suporte a escalabilidade horizontal",
+        "Todas as anteriores",
       ],
-      correct: 2,
-    },
-    {
-      question: "Um exemplo de banco de dados orientado a documentos é:",
-      options: ["MySQL", "MongoDB", "Oracle", "SQLite"],
-      correct: 1,
-    },
-    {
-      question: "NoSQL é mais adequado para:",
-      options: [
-        "Transações bancárias complexas",
-        "Grandes volumes de dados não estruturados",
-        "Planilhas simples",
-        "Sistemas embarcados",
-      ],
-      correct: 1,
-    },
-    {
-      question: "Os bancos de dados chave-valor armazenam dados como:",
-      options: [
-        "Linhas e colunas",
-        "JSON e XML",
-        "Par de chave e valor",
-        "Tabelas relacionais",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Cassandra é um exemplo de banco de dados:",
-      options: ["Relacional", "Grafos", "Chave-valor", "Colunar"],
-      correct: 3,
-    },
-    {
-      question: "Qual das opções é uma vantagem do NoSQL?",
-      options: [
-        "Rígido esquema de dados",
-        "Baixa performance",
-        "Alta escalabilidade horizontal",
-        "Dependência de joins complexos",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Bases orientadas a grafos são ideais para:",
-      options: [
-        "Transações bancárias",
-        "Análise de redes sociais",
-        "Relatórios fiscais",
-        "Armazenamento de imagens",
-      ],
-      correct: 1,
-    },
-    {
-      question: "NoSQL surgiu para atender principalmente:",
-      options: [
-        "Desenvolvedores desktop",
-        "Redes locais",
-        "Aplicações web escaláveis",
-        "Ambientes de computação científica",
-      ],
-      correct: 2,
-    },
-    {
-      question: "O que é sharding?",
-      options: [
-        "Compactação de dados",
-        "Criptografia de banco de dados",
-        "Particionamento de dados entre servidores",
-        "Backup automático",
-      ],
-      correct: 2,
+      correct: 4,
     },
     {
       question:
-        "Em bancos de dados NoSQL, os dados geralmente são armazenados:",
+        "Qual é a principal vantagem dos bancos NoSQL sobre os relacionais para aplicações que lidam com Big Data?",
       options: [
-        "Em colunas fixas",
-        "Como registros binários",
-        "De forma flexível e sem esquema definido",
-        "Em tabelas com foreign keys",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Redis é um banco de dados do tipo:",
-      options: ["Grafos", "Colunar", "Chave-valor", "Orientado a objetos"],
-      correct: 2,
-    },
-    {
-      question: "O que representa a consistência eventual?",
-      options: [
-        "Dados consistentes imediatamente após escrita",
-        "Dados nunca são consistentes",
-        "Consistência garantida após certo tempo",
-        "Ausência de transações",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Bancos NoSQL geralmente utilizam:",
-      options: [
-        "SQL padrão",
-        "Consultas com joins complexos",
-        "Modelagem relacional",
-        "Consultas baseadas em documentos ou chaves",
-      ],
-      correct: 3,
-    },
-    {
-      question: "Um banco orientado a colunas armazena dados:",
-      options: [
-        "Por colunas ao invés de linhas",
-        "Apenas em tabelas temporárias",
-        "Como objetos Java",
-        "Na RAM apenas",
+        "Maior flexibilidade e escalabilidade",
+        "Melhor suporte a transações",
+        "Suporte a relacionamentos complexos",
+        "Consultas otimizadas para dados tabulares",
+        "Consistência forte por padrão",
       ],
       correct: 0,
     },
     {
-      question: "CouchDB utiliza qual modelo de dados?",
-      options: [
-        "Chave-valor",
-        "Orientado a documentos",
-        "Grafos",
-        "Relacional",
-      ],
-      correct: 1,
-    },
-    {
-      question: "MapReduce é uma técnica associada a:",
-      options: [
-        "Banco de dados relacional",
-        "Análise de dados distribuída",
-        "Programação orientada a objetos",
-        "Redes neurais",
-      ],
-      correct: 1,
-    },
-    {
-      question: "O que é uma collection no MongoDB?",
-      options: [
-        "Um índice primário",
-        "Uma linha de dados",
-        "Um agrupamento de documentos",
-        "Um backup incremental",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Em NoSQL, a ausência de joins pode ser compensada por:",
-      options: [
-        "Normalização extrema",
-        "Redundância controlada de dados",
-        "Particionamento vertical",
-        "Stored procedures",
-      ],
-      correct: 1,
-    },
-    {
-      question: "Neo4j é especializado em qual tipo de dado?",
-      options: [
-        "Chaves e valores",
-        "Redes e relações entre entidades",
-        "Documentos JSON",
-        "Colunas independentes",
-      ],
-      correct: 1,
-    },
-    {
-      question: "A replicação de dados em NoSQL serve para:",
-      options: [
-        "Gerar relatórios",
-        "Aumentar segurança e disponibilidade",
-        "Criar tabelas temporárias",
-        "Limpar cache",
-      ],
-      correct: 1,
-    },
-    {
       question:
-        "Bases NoSQL tendem a sacrificar qual princípio do modelo ACID?",
-      options: ["Consistência", "Atomicidade", "Isolamento", "Durabilidade"],
+        "Em um banco de dados NoSQL baseado em documentos, qual é o formato mais comum para armazenar dados?",
+      options: ["JSON", "XML", "BSON", "YAML", "CSV"],
       correct: 0,
     },
     {
-      question: "O que é o CAP teorema?",
+      question:
+        "Qual tipo de banco NoSQL é mais indicado para armazenar dados que precisam ser consultados com base em relações complexas entre entidades?",
+      options: ["Documentos", "Grafos", "Colunar", "Chave-Valor", "Relações"],
+      correct: 1,
+    },
+    {
+      question:
+        "Quais são os principais benefícios da escalabilidade horizontal em bancos de dados NoSQL?",
       options: [
-        "Modelo de estrutura relacional",
-        "Limite entre consistência, disponibilidade e particionamento",
-        "Método de criptografia",
-        "Ferramenta para logs",
+        "Permite adicionar mais servidores para melhorar o desempenho",
+        "Reduz os custos de manutenção com servidores dedicados",
+        "Garante alta consistência em transações",
+        "Fácil de implementar em bancos relacionais",
+        "Melhora a performance apenas com o aumento de hardware",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "No modelo de banco de dados NoSQL, o que caracteriza a 'consistência eventual'?",
+      options: [
+        "Os dados são consistentes em todos os nós ao mesmo tempo",
+        "O banco garante que os dados sempre estarão disponíveis",
+        "Os dados podem não estar sincronizados entre os nós no início, mas eventualmente se alinham",
+        "Os dados são sincronizados imediatamente entre os nós",
+        "Todos os nós têm acesso instantâneo aos dados",
+      ],
+      correct: 2,
+    },
+    {
+      question:
+        "Qual é a principal diferença entre um banco de dados NoSQL colunar e um banco de dados relacional?",
+      options: [
+        "A estrutura de dados em tabelas no banco relacional e em colunas no banco NoSQL colunar",
+        "A capacidade de realizar joins entre diferentes tabelas",
+        "O suporte a dados não estruturados",
+        "O uso de linguagens de consulta baseadas em SQL",
+        "A exigência de esquema fixo no NoSQL",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Qual modelo de banco de dados NoSQL é mais apropriado para armazenar e gerenciar grandes volumes de dados de sensores em tempo real (IoT)?",
+      options: [
+        "Banco de documentos",
+        "Banco de grafos",
+        "Banco chave-valor",
+        "Banco colunar",
+        "Banco relacional",
+      ],
+      correct: 3,
+    },
+    {
+      question: "No contexto de bancos de dados NoSQL, o que é 'sharding'?",
+      options: [
+        "Uma técnica de replicação de dados para alta disponibilidade",
+        "O processo de dividir dados em múltiplos servidores para escalabilidade",
+        "Uma técnica de backup de dados",
+        "O processo de normalização de dados",
+        "A estratégia de gerenciamento de conexões simultâneas",
       ],
       correct: 1,
     },
     {
       question:
-        "A escalabilidade horizontal é uma vantagem em NoSQL porque permite:",
+        "Quais são as principais desvantagens de usar bancos NoSQL para sistemas que requerem transações complexas e consistência forte?",
       options: [
-        "Adicionar mais CPUs ao servidor",
-        "Aumentar espaço em disco",
-        "Adicionar servidores para lidar com mais carga",
-        "Reduzir consumo de memória",
+        "Falta de suporte a transações ACID",
+        "Dificuldade em escalar horizontalmente",
+        "Baixa performance em consultas simples",
+        "Suporte inadequado para dados não estruturados",
+        "Todas as anteriores",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Qual das seguintes opções é um exemplo de um banco de dados NoSQL chave-valor?",
+      options: ["MongoDB", "Neo4j", "Cassandra", "Redis", "CouchDB"],
+      correct: 3,
+    },
+    {
+      question:
+        "Qual é a principal característica dos bancos de dados NoSQL baseados em grafos?",
+      options: [
+        "Eles armazenam dados em tabelas e colunas",
+        "Eles modelam dados como uma rede de nós e arestas",
+        "Eles são otimizados para armazenar grandes volumes de dados",
+        "Eles utilizam o modelo chave-valor",
+        "Eles são projetados apenas para dados temporários",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "Quais são os principais desafios de manter a consistência em sistemas distribuídos, como bancos de dados NoSQL?",
+      options: [
+        "Garantir que todos os nós têm os mesmos dados ao mesmo tempo",
+        "Garantir alta performance com grandes volumes de dados",
+        "Manter a baixa latência em transações complexas",
+        "Armazenar dados temporários sem necessidade de replicação",
+        "Gerenciar a distribuição de dados em diferentes zonas geográficas",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Qual banco de dados NoSQL é mais indicado para armazenar e analisar grandes volumes de dados analíticos e de séries temporais?",
+      options: ["Cassandra", "MongoDB", "Neo4j", "Redis", "HBase"],
+      correct: 4,
+    },
+    {
+      question:
+        "Quando se usa um banco de dados NoSQL baseado em documentos, qual vantagem ele oferece sobre um banco relacional para o armazenamento de dados estruturados e semi-estruturados?",
+      options: [
+        "Capacidade de armazenar dados com esquemas flexíveis",
+        "Capacidade de realizar operações de junção entre múltiplas coleções",
+        "Suporte a transações complexas ACID",
+        "Armazenamento eficiente de dados de séries temporais",
+        "Exigência de esquemas fixos para todos os documentos",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Qual é a principal limitação do modelo de banco de dados chave-valor?",
+      options: [
+        "Dificuldade de armazenar dados complexos",
+        "Falta de escalabilidade",
+        "Necessidade de transações complexas",
+        "Dificuldade em realizar buscas eficientes",
+        "Falta de flexibilidade no esquema",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Qual é a principal vantagem do modelo de banco NoSQL de colunas para aplicações analíticas?",
+      options: [
+        "Armazenamento eficiente de dados tabulares",
+        "Otimização para consultas de agregação e leitura de grandes volumes",
+        "Suporte a relacionamentos entre dados",
+        "Fácil de usar com SQL",
+        "Baixa latência nas operações de leitura e escrita",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "Qual tecnologia é comumente usada para facilitar a replicação e a consistência em bancos de dados NoSQL?",
+      options: [
+        "MapReduce",
+        "Sharding",
+        "Consistência forte",
+        "CAP Theorem",
+        "Eventos de stream",
+      ],
+      correct: 3,
+    },
+    {
+      question:
+        "Em qual situação seria mais vantajoso utilizar um banco de dados NoSQL em vez de um relacional?",
+      options: [
+        "Quando a aplicação requer suporte a transações complexas e fortes garantias de consistência",
+        "Quando os dados são altamente estruturados e não mudam com frequência",
+        "Quando a aplicação precisa armazenar grandes volumes de dados variáveis e não estruturados",
+        "Quando o acesso a dados requer muitas junções entre tabelas",
+        "Quando a aplicação exige transações ACID em tempo real",
       ],
       correct: 2,
     },
     {
-      question: "Em bancos chave-valor, a performance é otimizada para:",
+      question:
+        "Quais são as vantagens da arquitetura de armazenamento distribuído em bancos de dados NoSQL?",
       options: [
-        "Joins entre tabelas",
-        "Consultas SQL complexas",
-        "Busca direta pela chave",
-        "Consultas analíticas",
+        "Aumento na complexidade de gerenciamento",
+        "Melhora da disponibilidade e escalabilidade do sistema",
+        "Redução de custos de hardware",
+        "Fácil implementação em bancos relacionais",
+        "Redução da necessidade de replicação",
       ],
-      correct: 2,
-    },
-    {
-      question: "Documentos em MongoDB são geralmente escritos em:",
-      options: ["XML", "JSON ou BSON", "CSV", "YAML"],
       correct: 1,
     },
   ],
   programacao: [
     {
       question:
-        "Qual linguagem é mais comum no desenvolvimento nativo para Android?",
-      options: ["Swift", "Kotlin", "C#", "JavaScript"],
+        "Qual a principal linguagem usada no desenvolvimento de apps Android?",
+      options: ["Swift", "Kotlin", "JavaScript", "Objective-C", "Ruby"],
+      correct: 1,
+    },
+    {
+      question: "Qual é a IDE recomendada para o desenvolvimento Android?",
+      options: [
+        "Xcode",
+        "Eclipse",
+        "Android Studio",
+        "Visual Studio",
+        "IntelliJ IDEA",
+      ],
+      correct: 2,
+    },
+    {
+      question:
+        "No desenvolvimento para dispositivos móveis, qual dos seguintes fatores é mais importante para a experiência do usuário?",
+      options: [
+        "Capacidade de processamento do dispositivo",
+        "Design e usabilidade",
+        "Tamanho da memória",
+        "Bateria de longo prazo",
+        "Capacidade de armazenamento",
+      ],
       correct: 1,
     },
     {
       question:
-        "O Swift é usado principalmente para desenvolver aplicativos em:",
-      options: ["Android", "Windows Phone", "iOS", "Linux"],
-      correct: 2,
-    },
-    {
-      question: "O que é um APK?",
+        "O que o Android Studio fornece como ferramenta principal para o desenvolvimento?",
       options: [
-        "Um tipo de banco de dados",
-        "Um arquivo de instalação para Android",
-        "Uma linguagem de programação",
-        "Um servidor de backend",
+        "Editor de código",
+        "Gerenciador de dependências",
+        "Emulador",
+        "Debugger",
+        "Todas as anteriores",
       ],
-      correct: 1,
+      correct: 4,
     },
     {
-      question: "Flutter é um framework desenvolvido por:",
-      options: ["Microsoft", "Apple", "Facebook", "Google"],
-      correct: 3,
+      question:
+        "Qual é a principal linguagem usada para o desenvolvimento de apps iOS?",
+      options: ["Swift", "Java", "Kotlin", "JavaScript", "Objective-C"],
+      correct: 0,
     },
     {
-      question: "No Flutter, a linguagem de programação utilizada é:",
-      options: ["Kotlin", "Swift", "Java", "Dart"],
-      correct: 3,
-    },
-    {
-      question: "React Native permite desenvolver aplicativos móveis usando:",
-      options: ["Java puro", "C++", "JavaScript e React", "Python"],
+      question:
+        "Qual é o sistema de gerenciamento de banco de dados local usado no Android?",
+      options: ["MySQL", "PostgreSQL", "SQLite", "Firebase", "MongoDB"],
       correct: 2,
     },
     {
-      question: "Uma das vantagens do desenvolvimento híbrido é:",
+      question:
+        "Qual biblioteca facilita o uso de interfaces gráficas em apps móveis híbridos?",
       options: [
-        "Performance superior ao nativo",
-        "Menos bugs",
-        "Código compartilhado entre plataformas",
-        "Uso exclusivo de SQL",
-      ],
-      correct: 2,
-    },
-    {
-      question: "A Play Store é a loja de aplicativos oficial da plataforma:",
-      options: ["iOS", "Windows", "Android", "Linux"],
-      correct: 2,
-    },
-    {
-      question: "Para publicar apps na App Store, é necessário utilizar:",
-      options: ["Android Studio", "Xcode", "Visual Studio Code", "NetBeans"],
-      correct: 1,
-    },
-    {
-      question: "Um emulador no desenvolvimento mobile serve para:",
-      options: [
-        "Testar aplicativos em diferentes dispositivos virtuais",
-        "Reduzir o tamanho do app",
-        "Criptografar o app",
-        "Aumentar a velocidade da CPU",
+        "React Native",
+        "SwiftUI",
+        "Flutter",
+        "Kotlin Multiplatform",
+        "ReactJS",
       ],
       correct: 0,
     },
     {
-      question: "O que é responsividade em apps móveis?",
+      question:
+        "No iOS, qual framework é utilizado para criar interfaces gráficas?",
+      options: ["UIKit", "Flutter", "React Native", "Core Data", "Xcode"],
+      correct: 0,
+    },
+    {
+      question: "Qual é o padrão de navegação que é comum no Android?",
       options: [
-        "Capacidade de rodar apenas offline",
-        "Interface adaptável a diferentes tamanhos de tela",
-        "Resposta rápida a toques",
-        "Resposta a e-mails automáticos",
+        "Gestos de deslizar",
+        "Navigation Drawer",
+        "Tab Bar",
+        "Action Bar",
+        "Gestos de toque",
       ],
       correct: 1,
+    },
+    {
+      question: "No iOS, qual é o método principal de navegação entre telas?",
+      options: [
+        "ViewControllers e NavigationControllers",
+        "Fragments",
+        "Sliding menus",
+        "Push notifications",
+        "Widgets",
+      ],
+      correct: 0,
+    },
+    {
+      question: "O que é o `Floating Action Button` no Android?",
+      options: [
+        "Um botão flutuante para ações principais",
+        "Uma barra de navegação",
+        "Uma notificação push",
+        "Um widget de formulário",
+        "Uma transição de tela",
+      ],
+      correct: 0,
     },
     {
       question:
-        "O ciclo de vida de uma Activity no Android inclui estados como:",
-      options: [
-        "Load, Show, Hide",
-        "Open, Stay, End",
-        "OnCreate, OnPause, OnDestroy",
-        "Start, Sleep, Reboot",
-      ],
-      correct: 2,
-    },
-    {
-      question: "No iOS, a interface gráfica é gerenciada por:",
-      options: ["Android Layouts", "UIKit", "Windows Forms", "Material UI"],
-      correct: 1,
-    },
-    {
-      question: "O que são permissões em aplicativos móveis?",
-      options: [
-        "Erros de programação",
-        "Componentes visuais",
-        "Autorização para acessar recursos do dispositivo",
-        "Temas visuais para o app",
-      ],
-      correct: 2,
-    },
-    {
-      question:
-        "Qual é o nome do ambiente de desenvolvimento oficial para Android?",
-      options: ["Eclipse", "Visual Studio", "Android Studio", "Xcode"],
-      correct: 2,
-    },
-    {
-      question: "Um app nativo é:",
-      options: [
-        "Feito para múltiplas plataformas com um único código",
-        "Desenvolvido diretamente para uma plataforma específica",
-        "Feito em HTML e CSS",
-        "Sempre offline",
-      ],
-      correct: 1,
-    },
-    {
-      question: "Os arquivos XML no Android servem principalmente para:",
-      options: [
-        "Controlar o banco de dados",
-        "Definir interfaces gráficas",
-        "Executar funções Java",
-        "Gerar sons no app",
-      ],
-      correct: 1,
-    },
-    {
-      question: "Push notifications são usadas para:",
-      options: [
-        "Reduzir o uso de memória RAM",
-        "Enviar mensagens ao usuário mesmo com o app fechado",
-        "Atualizar o banco de dados",
-        "Aumentar o FPS",
-      ],
-      correct: 1,
-    },
-    {
-      question: "O conceito de 'mobile first' significa:",
-      options: [
-        "Desenvolver primeiro a versão para desktop",
-        "Focar inicialmente na experiência móvel",
-        "Ignorar dispositivos móveis",
-        "Desenvolver para tablets apenas",
-      ],
-      correct: 1,
-    },
-    {
-      question: "SQLite é comumente usado para:",
-      options: [
-        "Gerar arquivos APK",
-        "Desenvolver interfaces",
-        "Persistência de dados local em apps",
-        "Controle de autenticação via Google",
-      ],
+        "Qual dos seguintes é um framework de desenvolvimento híbrido para apps móveis?",
+      options: ["Vue.js", "Angular", "Flutter", "Ember.js", "Express"],
       correct: 2,
     },
     {
       question:
-        "Qual das opções abaixo é um componente essencial de apps Android?",
-      options: ["Controllers", "Fragments", "Scenes", "Routers"],
-      correct: 1,
+        "No iOS, qual dos seguintes componentes de UI é utilizado para transições entre telas?",
+      options: [
+        "Tab Bar",
+        "Page Control",
+        "Navigation Bar",
+        "Gesture Recognizers",
+        "Alert View",
+      ],
+      correct: 2,
     },
     {
-      question: "O que são assets em um projeto mobile?",
+      question: "No Android, o que é o `RecyclerView`?",
       options: [
-        "Partes do código Java",
-        "Imagens, fontes e outros recursos de mídia",
-        "Frameworks externos",
-        "Comandos do terminal",
+        "Uma lista para exibir dados em tela",
+        "Uma transição de tela",
+        "Um tipo de banco de dados",
+        "Um framework de UI",
+        "Uma biblioteca de áudio",
+      ],
+      correct: 0,
+    },
+    {
+      question: "O que são **Widgets** no contexto de dispositivos móveis?",
+      options: [
+        "Elementos de interface que podem ser usados em várias telas",
+        "Recursos para interagir com a câmera",
+        "Funções de rede",
+        "Componentes de armazenamento local",
+        "Configurações de áudio",
+      ],
+      correct: 0,
+    },
+    {
+      question: "Qual é o objetivo principal do **Flutter**?",
+      options: [
+        "Desenvolver apps nativos para Android",
+        "Desenvolver apps móveis multiplataforma",
+        "Criar sites interativos",
+        "Criar interfaces para dispositivos desktop",
+        "Criar bancos de dados locais",
       ],
       correct: 1,
     },
     {
-      question:
-        "Um app pode ser publicado tanto na App Store quanto na Play Store se for:",
+      question: "No desenvolvimento Android, qual a função do `Manifest.xml`?",
       options: [
-        "Feito em Java",
-        "Compilado como EXE",
-        "Desenvolvido com frameworks multiplataforma",
-        "Programado em Assembly",
+        "Definir a interface do usuário",
+        "Gerenciar as dependências do projeto",
+        "Configurar permissões e atividades do app",
+        "Criar banco de dados local",
+        "Definir transições entre telas",
       ],
       correct: 2,
     },
     {
-      question: "Hot Reload no Flutter permite:",
+      question: "No iOS, o que são **Gestures**?",
       options: [
-        "Reduzir o tamanho do app",
-        "Recarregar o app do zero",
-        "Atualizar mudanças no código instantaneamente",
-        "Criar novos pacotes de instalação",
+        "Comandos de voz",
+        "Ações de interação do usuário com a tela (toque, deslizar, etc.)",
+        "Botões de navegação",
+        "Controles de hardware",
+        "Gestões de armazenamento local",
       ],
-      correct: 2,
+      correct: 1,
     },
     {
-      question:
-        "Qual framework mobile é baseado em componentes reutilizáveis e JavaScript?",
-      options: ["Xamarin", "Cordova", "React Native", "Jetpack Compose"],
-      correct: 2,
+      question: "O que é o **Firebase** no contexto de desenvolvimento móvel?",
+      options: [
+        "Uma ferramenta para criar interfaces de usuário",
+        "Uma plataforma de backend como serviço",
+        "Um framework de desenvolvimento",
+        "Uma biblioteca de animação",
+        "Um sistema de gerenciamento de banco de dados local",
+      ],
+      correct: 1,
+    },
+    {
+      question: "O que são **Notificações Push**?",
+      options: [
+        "Mensagens enviadas pelo servidor para o dispositivo móvel",
+        "Funções de rede",
+        "Alertas gerados pelo sistema operacional",
+        "Armazenamento de dados no dispositivo",
+        "Animações entre telas",
+      ],
+      correct: 0,
     },
   ],
   fundamentos: [
@@ -702,7 +686,9 @@ function loadQuestions(subject) {
     shuffledQuestions[index].correct = newCorrectIndex;
 
     li.innerHTML = `
-      <p class="question-text">${q.question}</p>
+      <p class="question-text"><p class="numero">Questão ${index + 1}</p> ${
+      q.question
+    }</p>
       ${shuffledOptions
         .map(
           (option, i) => `
@@ -868,7 +854,7 @@ if (discursivaBtn) {
         li.classList.add("quiz-question");
 
         li.innerHTML = `
-          <p class="question-text"><strong>Pergunta ${index + 1}:</strong> ${
+          <p class="question-text"><strong>${index + 1}:</strong> ${
           q.question
         }</p>
           <div class="resposta-modelo">

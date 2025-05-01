@@ -11,10 +11,14 @@
   --cor-btn: #0661c2;
 }
 
-body {
+body,
+html {
   font-family: sans-serif;
   background-color: var(--cor-fundo);
   color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -170,8 +174,7 @@ input {
   flex: 1 1 auto;
   max-width: 48%;
 }
-select,
-button {
+select {
   border-radius: 5px;
   padding: 5px;
   width: 100%;
@@ -258,12 +261,12 @@ p {
   button#btns-top,
   button#reload-quiz,
   button#btn-discursivas {
-    width: 30%;
+    width: 20%;
     gap: 10px;
     font-size: 8pt;
   }
   .box {
-    gap: 10px;
+    gap: 5px;
   }
 }
 
@@ -280,14 +283,14 @@ p {
 
   .box {
     flex-wrap: nowrap; /* mantém em linha */
-    justify-content: flex-start; /* alinha à esquerda para rolar */
   }
 
-  #reload-quiz:hover,
-  #btns-top:hover,
-  #btn-discursivas {
-    transform: scale(1.05);
-    gap: 2px;
+  button#btns-top,
+  button#reload-quiz,
+  button#btn-discursivas {
+    width: 15%;
+    padding: 10px 5px;
+    gap: 5px;
   }
 
   h2 {
@@ -342,10 +345,34 @@ p {
     font-size: 4vw;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 409px) {
   .box {
-    flex-wrap: wrap; /* mantém em linha */
+    flex-wrap: nowrap; /* mantém em linha */
     justify-content: center;
+  }
+  button#btns-top,
+  button#reload-quiz,
+  button#btn-discursivas {
+    gap: 0;
+    font-size: 8pt;
+    margin: 0;
+    width: 10%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  .box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-buttons {
+    flex-wrap: wrap;
+  }
+
+  .header-buttons button {
+    width: 100%;
   }
 }
 
@@ -384,4 +411,12 @@ p {
   text-align: justify;
   font-size: 12pt;
   margin: 10px 15px;
+}
+
+.numero {
+  color: yellow;
+  text-align: left;
+  font-size: 12pt;
+  margin-bottom: 20px;
+  margin-top: -25px;
 }
