@@ -1,4 +1,193 @@
 const questions = {
+  estrutura: [
+    {
+      question: "Qual é a função principal da placa-mãe?",
+      options: [
+        "Armazenar os dados permanentemente",
+        "Processar gráficos complexos",
+        "Fornecer energia ao sistema",
+        "Conectar e interligar todos os componentes do computador",
+        "Executar somente sistemas operacionais",
+      ],
+      correct: 3,
+    },
+    {
+      question: "O que é considerado um dispositivo de entrada?",
+      options: ["Monitor", "Impressora", "Teclado", "HD", "Memória RAM"],
+      correct: 2,
+    },
+    {
+      question:
+        "Qual componente é responsável pelo processamento central das tarefas do computador?",
+      options: [
+        "Memória RAM",
+        "HD",
+        "Placa-mãe",
+        "Fonte de alimentação",
+        "CPU (processador)",
+      ],
+      correct: 4,
+    },
+    {
+      question: "Qual é a função da memória RAM?",
+      options: [
+        "Armazenar dados permanentemente",
+        "Processar imagens gráficas",
+        "Armazenar temporariamente dados em uso",
+        "Fornecer energia ao computador",
+        "Gerenciar arquivos do sistema",
+      ],
+      correct: 2,
+    },
+    {
+      question: "O que caracteriza a memória ROM?",
+      options: [
+        "Memória volátil e rápida",
+        "Armazena dados temporários",
+        "Pode ser regravada frequentemente",
+        "Armazena dados permanentemente e não volátil",
+        "Armazena arquivos de usuário",
+      ],
+      correct: 3,
+    },
+    {
+      question: "Qual dos seguintes é um exemplo de dispositivo de saída?",
+      options: ["Mouse", "Scanner", "Impressora", "Teclado", "Webcam"],
+      correct: 2,
+    },
+    {
+      question: "O que é um SSD?",
+      options: [
+        "Tipo de processador",
+        "Sistema operacional",
+        "Tipo de memória RAM",
+        "Unidade de armazenamento sólido",
+        "Software de segurança",
+      ],
+      correct: 3,
+    },
+    {
+      question: "A principal função da fonte de alimentação é:",
+      options: [
+        "Controlar a temperatura interna",
+        "Armazenar dados",
+        "Converter energia elétrica para os componentes",
+        "Processar gráficos",
+        "Exibir imagens na tela",
+      ],
+      correct: 2,
+    },
+    {
+      question: "O que diferencia um HD de um SSD?",
+      options: [
+        "HD é mais rápido que SSD",
+        "SSD usa partes móveis",
+        "HD é mais resistente a quedas",
+        "SSD é mais rápido e não tem partes móveis",
+        "Ambos têm mesma velocidade",
+      ],
+      correct: 3,
+    },
+    {
+      question: "A placa de vídeo dedicada serve principalmente para:",
+      options: [
+        "Aumentar a capacidade de armazenamento",
+        "Controlar a rede local",
+        "Processar imagens e vídeos com mais eficiência",
+        "Ampliar a memória RAM",
+        "Proteger contra vírus",
+      ],
+      correct: 2,
+    },
+    {
+      question: "Qual item é considerado um periférico de entrada e saída?",
+      options: ["Scanner", "Microfone", "Monitor", "Pen drive", "Teclado"],
+      correct: 3,
+    },
+    {
+      question: "O barramento de dados tem a função de:",
+      options: [
+        "Alimentar o processador",
+        "Conectar apenas a memória RAM",
+        "Transportar sinais elétricos de energia",
+        "Transportar informações entre os componentes",
+        "Controlar o cooler",
+      ],
+      correct: 3,
+    },
+    {
+      question: "O BIOS é responsável por:",
+      options: [
+        "Carregar o sistema operacional a partir da internet",
+        "Processar imagens no sistema",
+        "Iniciar o hardware e carregar o sistema operacional",
+        "Proteger o computador contra vírus",
+        "Aumentar a velocidade da memória RAM",
+      ],
+      correct: 2,
+    },
+    {
+      question: "Qual das alternativas representa um tipo de slot de expansão?",
+      options: ["HDMI", "VGA", "PCI Express", "USB", "SATA"],
+      correct: 2,
+    },
+    {
+      question: "Um cooler é utilizado para:",
+      options: [
+        "Reforçar a placa de vídeo",
+        "Aumentar a capacidade da fonte",
+        "Arrefecer os componentes do computador",
+        "Estabilizar a internet",
+        "Processar arquivos com mais rapidez",
+      ],
+      correct: 2,
+    },
+    {
+      question: "Qual das opções é considerada memória volátil?",
+      options: ["SSD", "HD", "ROM", "Cache", "RAM"],
+      correct: 4,
+    },
+    {
+      question: "Qual o papel do chipset na placa-mãe?",
+      options: [
+        "Ampliar o som do sistema",
+        "Controlar o sistema operacional",
+        "Gerenciar comunicação entre processador, memória e periféricos",
+        "Fornecer energia à placa de vídeo",
+        "Instalar programas automaticamente",
+      ],
+      correct: 2,
+    },
+    {
+      question:
+        "O que acontece quando falta dissipação térmica em um processador?",
+      options: [
+        "O computador acelera",
+        "O sistema se reinicia por segurança",
+        "A memória RAM é apagada",
+        "O HD queima",
+        "O monitor desliga",
+      ],
+      correct: 1,
+    },
+    {
+      question: "Qual componente armazena o sistema operacional?",
+      options: [
+        "Memória RAM",
+        "BIOS",
+        "Processador",
+        "HD ou SSD",
+        "Placa de rede",
+      ],
+      correct: 3,
+    },
+    {
+      question:
+        "Qual das opções abaixo é uma unidade de medida de frequência usada para processadores?",
+      options: ["MB", "GB", "TB", "GHz", "RPM"],
+      correct: 3,
+    },
+  ],
   arquitetura: [
     {
       question:
@@ -631,20 +820,138 @@ const questions = {
 
 const escritas = [
   {
-    escritaFundamentos: [
+    escritaArquitetura: [
       {
         question:
-          "Imagine uma pequena empresa de móveis que não possui presença digital. Como CIO de TI, indique 5 ações práticas para modernizá-la.",
+          "O que é uma arquitetura de dados não relacional e como ela difere da arquitetura relacional tradicional?",
         options: [
-          "A empresa pode melhorar criando um site para vendas online, adotando sistemas integrados como ERP e CRM para organização e relacionamento com clientes, garantindo a segurança das informações e capacitando os funcionários para usar essas tecnologias de forma eficiente.",
+          "A arquitetura de dados não relacional é baseada em bancos de dados NoSQL, que armazenam dados em formatos flexíveis como documentos, colunas, grafos ou pares chave-valor. Diferente da arquitetura relacional, que usa tabelas fixas e esquema rígido, a arquitetura não relacional permite estruturas dinâmicas, escalabilidade horizontal e melhor desempenho para grandes volumes de dados não estruturados ou semi-estruturados.",
         ],
         correct: 0,
       },
       {
         question:
-          "Na área de TI, quais são três mecanismos de segurança conhecidos? Explique brevemente.",
+          "Quais são os principais tipos de bancos de dados não relacionais e suas características?",
         options: [
-          "A segurança da informação pode ser reforçada com criptografia para proteger os dados, firewall e antivírus para evitar ataques, e VPN para garantir conexões seguras entre redes e dispositivos.",
+          "Os principais tipos são: Documentos (ex: MongoDB) que armazenam dados em JSON/BSON, ideais para estruturas flexíveis; Colunar (ex: Cassandra) que organizam dados por colunas, otimizando consultas analíticas; Chave-valor (ex: Redis) que usam uma chave única para acessar um valor, ideais para cache e alta performance; Grafos (ex: Neo4j) que representam dados com vértices e arestas, úteis para redes sociais e conexões complexas.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Quais as vantagens da arquitetura não relacional para aplicações modernas?",
+        options: [
+          "As principais vantagens são: escalabilidade horizontal, fácil de crescer adicionando servidores; alta performance em leitura/escrita para grandes volumes de dados; flexibilidade de esquemas, permitindo mudanças rápidas nos dados; e compatibilidade com big data e ambientes distribuídos, como nuvem.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Em quais cenários é mais indicado usar uma arquitetura de dados não relacional?",
+        options: [
+          "É mais indicada em: Aplicações com grandes volumes de dados não estruturados (ex: redes sociais); sistemas com alta taxa de leitura/escrita (ex: e-commerce, logs, jogos online); ambientes que exigem alta escalabilidade e disponibilidade; e situações onde o esquema dos dados muda com frequência.",
+        ],
+        correct: 0,
+      },
+    ],
+    escritaFundamentos: [
+      {
+        question:
+          "O que são sistemas de informação e como eles contribuem para o funcionamento das empresas?",
+        options: [
+          "Sistemas de informação são conjuntos de componentes inter-relacionados que coletam, processam, armazenam e distribuem informações para apoiar as operações, a tomada de decisões, o controle organizacional e a análise estratégica. Eles ajudam as empresas a melhorar a eficiência operacional, a comunicação e a tomada de decisões informadas.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Quais são os principais tipos de sistemas de informação utilizados nas empresas e qual a função de cada um?",
+        options: [
+          "Os principais tipos de sistemas de informação nas empresas são: Sistema de Processamento de Transações (SPT), que registra transações diárias; Sistema de Informação Gerencial (SIG), que fornece relatórios e apoio à decisão; Sistema de Apoio à Decisão (SAD), que auxilia nas decisões estratégicas; e Sistema de Informação Executiva (SIE), que fornece informações resumidas para os altos executivos.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Como a implementação de um ERP (Enterprise Resource Planning) pode beneficiar uma organização?",
+        options: [
+          "A implementação de um ERP pode integrar todos os processos empresariais em um único sistema, melhorando a comunicação entre departamentos, aumentando a eficiência operacional, reduzindo erros e custos operacionais, e proporcionando uma visão em tempo real das operações, o que facilita a tomada de decisões estratégicas.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Quais são os principais desafios na implementação de um sistema de informação em uma organização?",
+        options: [
+          "Os principais desafios incluem: resistência à mudança por parte dos funcionários, custos elevados de implementação e manutenção, necessidade de treinamento contínuo, integração com sistemas legados e a adaptação do sistema às necessidades específicas da organização.",
+        ],
+        correct: 0,
+      },
+    ],
+    escritaEstrutura: [
+      {
+        question:
+          "Explique a função da placa-mãe em um computador e por que ela é essencial para o funcionamento do sistema.",
+        options: [
+          "A placa-mãe é responsável por interligar todos os componentes do computador, como processador, memória RAM, HD/SSD e periféricos. Ela permite a troca de dados entre esses elementos e distribui energia, sendo essencial para o funcionamento coordenado do sistema.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Por que a memória RAM é considerada volátil e qual o impacto disso no uso do computador?",
+        options: [
+          "A memória RAM é volátil porque perde todas as informações armazenadas quando o computador é desligado. Ela é usada para guardar dados temporários enquanto o sistema está em uso, o que permite rapidez no acesso e execução de tarefas.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Qual a principal diferença entre um HD (disco rígido) e um SSD (unidade de estado sólido)?",
+        options: [
+          "A principal diferença é que o HD possui partes mecânicas e é mais lento, enquanto o SSD usa memória flash sem partes móveis, oferecendo maior velocidade, resistência a quedas e menor consumo de energia.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "O que é o BIOS e qual sua importância no processo de inicialização do computador?",
+        options: [
+          "O BIOS é um firmware armazenado na placa-mãe que executa a verificação dos componentes de hardware e inicia o carregamento do sistema operacional. Sem ele, o computador não conseguiria iniciar corretamente.",
+        ],
+        correct: 0,
+      },
+    ],
+    escritaProgramacao: [
+      {
+        question:
+          "Quais são as principais plataformas para desenvolvimento de aplicativos móveis e quais suas características?",
+        options: [
+          "As principais plataformas são Android (usando Java ou Kotlin) e iOS (usando Swift ou Objective-C). Android é mais popular globalmente, enquanto iOS oferece uma base de usuários mais engajada. Ambas as plataformas possuem kits de desenvolvimento (SDKs) próprios e oferecem ferramentas para criar aplicativos nativos, mas existem também frameworks híbridos como React Native e Flutter que permitem desenvolvimento multiplataforma.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Qual é a diferença entre aplicativos nativos e híbridos no desenvolvimento para dispositivos móveis?",
+        options: [
+          "Aplicativos nativos são desenvolvidos especificamente para uma plataforma (Android ou iOS), aproveitando ao máximo os recursos do dispositivo, como câmeras e sensores. Já os aplicativos híbridos são criados utilizando tecnologias web (HTML, CSS, JavaScript) e podem ser executados em várias plataformas, mas podem ter desempenho inferior e menos acesso a recursos do dispositivo.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Quais são as principais vantagens de usar o framework Flutter para o desenvolvimento de aplicativos móveis?",
+        options: [
+          "O Flutter permite o desenvolvimento de aplicativos nativos para Android e iOS a partir de uma única base de código. As vantagens incluem alta performance, devido ao seu mecanismo gráfico nativo, um rico conjunto de widgets para interface do usuário e a possibilidade de criar aplicativos visualmente atraentes com um único código para múltiplas plataformas.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Quais são os principais desafios no desenvolvimento de aplicativos móveis e como superá-los?",
+        options: [
+          "Os principais desafios incluem garantir uma boa performance em dispositivos variados, gerenciar o consumo de bateria, lidar com diferentes resoluções de tela e manter a segurança dos dados. Para superar esses desafios, é importante otimizar o código, testar em diversos dispositivos e utilizar técnicas como compactação de imagens, armazenamento local eficiente e criptografia para proteção de dados.",
         ],
         correct: 0,
       },
@@ -798,6 +1105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const subjectTitles = {
+    estrutura: "Estrutura de Computadores",
     arquitetura: "Arquitetura de Dados Não Relacionais",
     fundamentos: "Fundamentos de Sistemas de Informação",
     programacao: "Programação para Dispositivos Móveis",
@@ -828,27 +1136,47 @@ if (reloadQuizButton) {
     if (subject) {
       loadQuestions(subject);
 
-      // Esconde e zera o contador de acertos
       const scoreDisplay = document.getElementById("score-counter");
       scoreDisplay.textContent = "";
       scoreDisplay.style.display = "none";
+
+      const checkAnswersButton = document.getElementById("check-answers");
+      if (checkAnswersButton) {
+        checkAnswersButton.style.display = "block";
+      }
     }
   };
 }
 
 const discursivaBtn = document.getElementById("btn-discursivas");
+
 if (discursivaBtn) {
   discursivaBtn.addEventListener("click", () => {
     const subject = localStorage.getItem("selectedSubject");
     const questionContainer = document.querySelector(".quiz-list");
 
+    // Ocultar o botão de "Verificar Respostas" quando for clicado em "Discursivas"
+    const checkAnswersButton = document.getElementById("check-answers");
+    if (checkAnswersButton) {
+      checkAnswersButton.style.display = "none"; // Esconde o botão
+    }
+
     questionContainer.innerHTML = "";
+
+    if (!subject) {
+      questionContainer.innerHTML =
+        "<p>Matéria não selecionada. Por favor, escolha uma matéria antes de continuar.</p>";
+      return;
+    }
 
     const key = `escrita${subject.charAt(0).toUpperCase() + subject.slice(1)}`;
 
-    if (subject && escritas[0][key]) {
-      const questions = escritas[0][key];
+    console.log("Matéria selecionada:", subject);
+    console.log("Chave de acesso às questões:", key);
 
+    const questions = escritas[0][key];
+
+    if (questions && Array.isArray(questions)) {
       questions.forEach((q, index) => {
         const li = document.createElement("li");
         li.classList.add("quiz-question");
