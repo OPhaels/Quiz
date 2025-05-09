@@ -237,7 +237,8 @@ p {
 /* Responsividade geral */
 @media (max-width: 720px) {
   h1#materia-titulo {
-    font-size: 8vw;
+    font-size: 9vw;
+    margin-top: 10px;
   }
 
   h2 {
@@ -283,12 +284,12 @@ p {
   }
 
   .exp #qu {
-    font-size: 60pt;
-    margin-bottom: 10px;
+    font-size: 70pt;
+    margin-bottom: -20px;
   }
 
   section #start-quiz {
-    width: 150px;
+    width: 220px;
   }
   .box p {
     font-size: 12pt;
@@ -365,6 +366,10 @@ p {
   .box {
     flex-wrap: nowrap; /* mantém em linha */
     justify-content: center;
+  }
+
+  section #start-quiz {
+    width: 150px;
   }
   button#btns-top,
   button#reload-quiz,
