@@ -993,9 +993,7 @@ function loadQuestions(subject) {
     shuffledQuestions[index].correct = newCorrectIndex;
 
     li.innerHTML = `
-      <p class="question-text"><p class="numero">Questão ${index + 1}</p> ${
-      q.question
-    }</p>
+      <p class="numero">${index + 1})</p> ${q.question}</p>
       ${shuffledOptions
         .map(
           (option, i) => `
@@ -1182,7 +1180,7 @@ if (discursivaBtn) {
         li.classList.add("quiz-question");
 
         li.innerHTML = `
-          <p class="question-text"><strong>${index + 1}:</strong> ${
+          <p class="question-text"><strong>${index + 1})</strong> ${
           q.question
         }</p>
           <div class="resposta-modelo">

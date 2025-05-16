@@ -14,43 +14,35 @@
     <div class="logo">
       <span id="top"></span>
     </div>
+    <div class="exp">
+      <h1 id="qu">QUIZ</h1>
+      <p>Para T.I</p>
+    </div>
   </header>
 
-  <main>
-    <div class="exp">
+  <section>
+    <select id="subject-select">
+      <option value="" disabled selected>Escolha uma matéria aqui!</option>
+      <option value="estrutura">Estrutura de Computadores - EC</option>
+      <option value="arquitetura">Arquitetura de Dados Não Relacionais - ADNR</option>
+      <option value="fundamentos">Fundamentos de Sistemas de Informação - FSI</option>
+      <option value="programacao">Programação para Dispositivos Móveis - PDM</option>
+    </select>
+    <button id="start-quiz">Iniciar Quiz</button>
 
-      <h1>
-        <p id="qu">QUIZ</p>
-        <p>PARA T.I</p>
-      </h1>
-
-      <section>
-        <select id="subject-select">
-          <option value="" disabled selected>Escolha uma matéria aqui!</option>
-          <option value="estrutura">Estrutura de Computadores - EC</option>
-          <option value="arquitetura">Arquitetura de Dados Não Relacionais - ADNR</option>
-          <option value="fundamentos">Fundamentos de Sistemas de Informação - FSI</option>
-          <option value="programacao">Programação para Dispositivos Móveis - PDM</option>
-        </select>
-        <button id="start-quiz">Iniciar Quiz</button>
-      </section>
-      <h2>
-        Entre no nosso servidor do Discord para acessar ainda mais conteúdos!
-      </h2>
-      <p>
-        Criado especialmente para auxiliar nos estudos e práticas voltados à área de Tecnologia da Informação.
-      </p>
-    </div>
-
-    <div class="discord">
-      <div class="butt" onclick="window.open('https://discord.gg/fUabSD4ZWB', '_blank')">
-        <img src="discord.png" alt="Discord Logo" />
+    <main>
+      <div class="boxer">
+        <h2>Entre no nosso servidor do Discord para acessar ainda mais conteúdos!</h2>
+        <p>Criado especialmente para auxiliar nos estudos e práticas voltados à área de Tecnologia da Informação.</p>
       </div>
-    </div>
 
-
-    </div>
-  </main>
+      <div class="discord">
+        <div class="butt" onclick="window.open('https://discord.gg/fUabSD4ZWB', '_blank')">
+          <img src="discord.png" alt="Discord Logo" />
+        </div>
+      </div>
+    </main>
+  </section>
 </body>
 
 </html>
