@@ -309,7 +309,7 @@ select {
 /* Responsividade geral */
 @media (max-width: 720px) {
   h1#materia-titulo {
-    font-size: 10vw;
+    font-size: 9vw;
     margin-top: 10px;
   }
 
@@ -353,7 +353,7 @@ select {
 }
 @media (max-width: 455px) {
   h1#materia-titulo {
-    font-size: 12vw;
+    font-size: 10vw;
   }
   body {
     margin: 0;
