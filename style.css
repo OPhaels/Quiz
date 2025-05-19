@@ -6,7 +6,7 @@
 :root {
   --cor-primaria: #070e50;
   --cor-secundaria: #3d6dccbd;
-  --cor-fundo: #f3f4fa;
+  --cor-fundo: #d6d8e6;
   --cor-texto: #3650d3;
   --cor-btn: #0661c2;
 }
@@ -18,8 +18,8 @@
 }
 
 .exp #qu {
-  color: var(--cor-primaria);
-  text-shadow: 0 0 8px white;
+  color: var(--cor-secundaria);
+  text-shadow: 0 0 8px var(--cor-fundo);
   margin-bottom: -20px;
   font-size: 70pt;
   text-align: center;
@@ -338,8 +338,8 @@ select {
   button#reload-quiz,
   button#btn-discursivas {
     width: 20%;
-    gap: 5px;
-    font-size: 8pt;
+    gap: 2px;
+    font-size: 9pt;
   }
   .box {
     gap: 8px;
@@ -353,7 +353,7 @@ select {
 }
 @media (max-width: 455px) {
   h1#materia-titulo {
-    font-size: 8vw;
+    font-size: 28pt;
   }
   body {
     margin: 0;
