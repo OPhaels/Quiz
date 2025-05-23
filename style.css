@@ -107,7 +107,6 @@ input {
   background: var(--cor-secundaria);
   border-radius: 5px;
   cursor: pointer;
-  margin: 8px auto;
   width: 99%;
   text-align: left;
 }
@@ -128,7 +127,7 @@ input {
   font-size: 18pt;
 }
 .option-container {
-  margin: 20px;
+  margin: 0 30px;
 }
 .quiz-option:checked + .quiz-label {
   background-color: white;
@@ -136,12 +135,12 @@ input {
 }
 .questao {
   font-size: 13pt;
-  background: rgba(255, 255, 255, 0.281);
-  padding: 10px;
+  background: rgba(255, 255, 255, 0.205);
+  padding: 15px;
   border-radius: 5px;
   border-left: 2px solid;
   border-right: 2px solid;
-  margin: 15px 30px;
+  margin: 20px 45px 20px 30px;
 }
 #check-answers {
   margin: 20px auto;
@@ -260,6 +259,7 @@ strong {
 
 .numero {
   background: white;
+  font-weight: bolder;
   color: var(--cor-primaria);
   padding: 5px;
   border-radius: 50px;
@@ -269,21 +269,24 @@ strong {
   bottom: 10px;
   right: 10px;
   float: left;
+  top: -10px;
+  text-shadow: 0 0 5px white;
   margin-right: 10px;
-  display: inline;
 }
 
 #start-quiz {
   color: var(--cor-primaria);
   background: white;
-  border: 1px dashed;
+  border: 1px dashed var(--cor-primaria);
   border-radius: 5px;
   font-size: 13pt;
-  width: 250px;
+  width: 500px;
   padding: 12px;
   margin-top: 40px;
 }
-
+#start-quiz:hover {
+  background: rgba(0, 0, 0, 0.185);
+}
 .butt img {
   background: var(--cor-primaria);
   margin: 10px auto;
@@ -321,6 +324,10 @@ select {
     margin-top: 10px;
   }
 
+  .questao {
+    margin: 20px 35px 20px 30px;
+  }
+
   h2 {
     font-size: 18pt;
   }
@@ -340,7 +347,8 @@ select {
 
   #start-quiz {
     font-size: 12pt;
-    width: 200px;
+    width: 500px;
+    padding: 15px;
   }
   button#btns-top,
   button#reload-quiz,
@@ -378,7 +386,7 @@ select {
   }
 
   section #start-quiz {
-    width: 250px;
+    width: 300px;
   }
   .box p {
     font-size: 12pt;
