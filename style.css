@@ -259,7 +259,10 @@ strong {
 }
 
 .numero {
-  color: yellow;
+  background: white;
+  color: var(--cor-primaria);
+  padding: 5px;
+  border-radius: 50px;
   text-align: left;
   font-size: 10pt;
   position: relative;

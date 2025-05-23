@@ -993,7 +993,10 @@ function loadQuestions(subject) {
     shuffledQuestions[index].correct = newCorrectIndex;
 
     li.innerHTML = `
-      <p class="numero">${index + 1})</p> <p class="questao"> ${q.question}</p>
+      <p class="numero">${String(index + 1).padStart(
+        2,
+        "0"
+      )})</p> <p class="questao"> ${q.question}</p>
       ${shuffledOptions
         .map(
           (option, i) => `
