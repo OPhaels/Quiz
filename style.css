@@ -58,7 +58,7 @@ h1 {
   padding: 10px;
   font-weight: lighter;
   text-align: center;
-  color: var(--cor-fundo);
+  color: white;
   font-family: serif;
   text-shadow: 1px 1px 5px black;
   font-weight: bold;
@@ -134,19 +134,21 @@ input {
   color: black;
 }
 .questao {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13pt;
-  background: rgba(255, 255, 255, 0.205);
-  padding: 15px;
+  background: white;
+  color: black;
+  padding: 20px;
+  font-weight: bold;
   border-radius: 5px;
-  border-left: 2px solid;
-  border-right: 2px solid;
-  margin: 20px 45px 20px 30px;
+  border: 2px double var(--cor-primaria);
+  margin: 20px 45px 40px 30px;
 }
 #check-answers {
   margin: 20px auto;
   width: 98%;
   display: block;
-  padding: 10px;
+  padding: 15px;
   border: none;
   border-radius: 20px;
   font-size: 15pt;
@@ -258,9 +260,10 @@ strong {
 }
 
 .numero {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background: white;
-  font-weight: bolder;
-  color: var(--cor-primaria);
+  font-weight: bold;
+  color: black;
   padding: 5px;
   border-radius: 50px;
   text-align: left;
