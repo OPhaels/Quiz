@@ -5,8 +5,8 @@
 
 :root {
   --cor-primaria: #070e50;
-  --cor-secundaria: #3d6dccbd;
-  --cor-fundo: #d6d8e6;
+  --cor-secundaria: #4472cfbd;
+  --cor-fundo: #dfe0e8;
   --cor-texto: #3650d3;
   --cor-btn: #0661c2;
 }
@@ -49,7 +49,7 @@ html {
   align-items: center;
   gap: 30px;
   flex-wrap: nowrap;
-  margin-top: 20px; /* <<< Essa linha aqui! */
+  margin-top: 20px;
 }
 
 h1 {
@@ -136,12 +136,12 @@ input {
 .questao {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13pt;
-  background: white;
+  background: rgba(255, 255, 255, 0.949);
   color: black;
   padding: 20px;
   font-weight: bold;
-  border-radius: 5px;
-  border: 2px double var(--cor-primaria);
+  border-radius: 8px;
+  border: 1px double var(--cor-primaria);
   margin: 20px 45px 40px 30px;
 }
 #check-answers {
@@ -168,8 +168,8 @@ input {
 #btns-top,
 #reload-quiz,
 #btn-discursivas {
-  background-color: #5196e0;
-  text-shadow: 0 0 6px black;
+  background-color: #4991de;
+  text-shadow: 0 0 4px rgba(131, 128, 128, 0.405);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -262,17 +262,17 @@ strong {
 .numero {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background: white;
-  font-weight: bold;
-  color: black;
+  color: rgba(0, 0, 0, 0.783);
+  border: none;
   padding: 5px;
   border-radius: 50px;
   text-align: left;
-  font-size: 10pt;
+  font-size: 8pt;
   position: relative;
   bottom: 10px;
-  right: 10px;
+  right: 5px;
   float: left;
-  top: -10px;
+  top: -5px;
   text-shadow: 0 0 5px white;
   margin-right: 10px;
 }
@@ -366,7 +366,8 @@ select {
 }
 @media (max-width: 600px) {
   #subject-select,
-  .boxer {
+  .boxer,
+  #start-quiz {
     width: 400px;
   }
 }
@@ -396,7 +397,7 @@ select {
   }
 
   .box {
-    flex-wrap: nowrap; /* mantém em linha */
+    flex-wrap: nowrap;
   }
 
   button#btns-top,
@@ -467,10 +468,6 @@ select {
     gap: 5px;
     flex-wrap: nowrap; /* mantém em linha */
     justify-content: center;
-  }
-
-  section #start-quiz {
-    width: 150px;
   }
   button#btns-top,
   button#reload-quiz,
