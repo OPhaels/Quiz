@@ -10,6 +10,7 @@
   --cor-texto: #3650d3;
   --cor-btn: #0661c2;
 }
+
 .exp h1 {
   color: var(--cor-primaria);
   text-shadow: 0 5px 14px rgba(0, 0, 0, 0.233);
@@ -17,13 +18,14 @@
   text-align: center;
 }
 
-.exp #qu {
+.exp #tema {
   color: var(--cor-secundaria);
   text-shadow: 0 0 8px var(--cor-fundo);
   margin-bottom: -20px;
-  font-size: 70pt;
+  font-size: 60pt;
   text-align: center;
 }
+
 body,
 html {
   font-family: sans-serif;
@@ -43,6 +45,7 @@ html {
   align-items: center;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.603);
 }
+
 .box {
   display: flex;
   justify-content: center;
@@ -126,13 +129,16 @@ input {
   display: none;
   font-size: 18pt;
 }
+
 .option-container {
   margin: 0 30px;
 }
-.quiz-option:checked + .quiz-label {
+
+.quiz-option:checked+.quiz-label {
   background-color: white;
   color: black;
 }
+
 .questao {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13pt;
@@ -144,6 +150,7 @@ input {
   border: 1px double var(--cor-primaria);
   margin: 20px 45px 40px 30px;
 }
+
 #check-answers {
   margin: 20px auto;
   width: 98%;
@@ -176,12 +183,15 @@ input {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  white-space: nowrap; /* Impede que o texto quebre dentro do botão */
+  white-space: nowrap;
+  /* Impede que o texto quebre dentro do botão */
   min-width: 120px;
   font-size: 10pt;
-  width: 150px; /* Opcional: deixa todos botões com largura mínima */
+  width: 150px;
+  /* Opcional: deixa todos botões com largura mínima */
   text-align: center;
 }
+
 #reload-quiz:hover,
 #btns-top:hover,
 #btn-discursivas:hover {
@@ -190,6 +200,7 @@ input {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.938);
   color: white;
 }
+
 #btns-top {
   text-align: center;
 }
@@ -208,6 +219,7 @@ p {
   text-align: center;
   line-height: 1.4;
 }
+
 .exp p {
   color: black;
   width: 100px;
@@ -230,6 +242,7 @@ p {
 .question-text {
   font-size: 16pt;
 }
+
 .quiz-question {
   font-size: 12pt;
 }
@@ -247,6 +260,7 @@ strong {
   color: yellow;
   text-shadow: 0 0 8px black;
 }
+
 .question-text {
   font-weight: bold;
   text-align: center;
@@ -260,11 +274,12 @@ strong {
 }
 
 .numero {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background: white;
-  color: rgba(0, 0, 0, 0.783);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.868);
   border: none;
   padding: 5px;
+  font-weight: bold;
   border-radius: 50px;
   text-align: left;
   font-size: 8pt;
@@ -280,24 +295,25 @@ strong {
 #start-quiz {
   color: var(--cor-primaria);
   background: white;
-  border: 1px dashed var(--cor-primaria);
+  border: 1px solid var(--cor-texto);
   border-radius: 5px;
   font-size: 13pt;
   width: 500px;
   padding: 12px;
   margin-top: 40px;
 }
+
 #start-quiz:hover {
   background: rgba(0, 0, 0, 0.185);
 }
+
 .butt img {
   background: var(--cor-primaria);
-  margin: 10px auto;
+  margin: 5px auto 15px auto;
   width: 60px;
   height: 60px;
-  padding: 5px;
   background: white;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 select {
@@ -353,6 +369,7 @@ select {
     width: 500px;
     padding: 15px;
   }
+
   button#btns-top,
   button#reload-quiz,
   button#btn-discursivas {
@@ -360,31 +377,37 @@ select {
     gap: 2px;
     font-size: 9pt;
   }
+
   .box {
     gap: 8px;
   }
 }
+
 @media (max-width: 600px) {
+
   #subject-select,
   .boxer,
   #start-quiz {
     width: 400px;
   }
 }
+
 @media (max-width: 455px) {
   h1#materia-titulo {
     font-size: 28pt;
   }
+
   body {
     margin: 0;
     padding: 0;
   }
+
   #subject-select,
   .boxer {
     width: 300px;
   }
 
-  .exp #qu {
+  .exp #tema {
     font-size: 70pt;
     margin-bottom: -20px;
   }
@@ -392,6 +415,7 @@ select {
   section #start-quiz {
     width: 300px;
   }
+
   .box p {
     font-size: 12pt;
   }
@@ -455,6 +479,7 @@ select {
   .exp p {
     font-size: 11pt;
   }
+
   .boxe {
     width: 180px;
   }
@@ -463,12 +488,15 @@ select {
     font-size: 4vw;
   }
 }
+
 @media (max-width: 415px) {
   .box {
     gap: 5px;
-    flex-wrap: nowrap; /* mantém em linha */
+    flex-wrap: nowrap;
+    /* mantém em linha */
     justify-content: center;
   }
+
   button#btns-top,
   button#reload-quiz,
   button#btn-discursivas {
