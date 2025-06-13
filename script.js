@@ -1151,6 +1151,58 @@ const escritas = [
         correct: 0,
       },
     ],
+
+    escritaSistemas: [
+      {
+        question:
+          "Explique o que é um sistema operacional e qual é sua principal função em um computador.",
+        options: [
+          "Um sistema operacional é um software essencial que atua como uma ponte entre o hardware e os programas do usuário. Ele gerencia recursos como memória, processador, dispositivos de entrada/saída e arquivos, além de fornecer uma interface para que os usuários e aplicativos possam interagir com o sistema de forma organizada e eficiente.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Qual a diferença entre multitarefa cooperativa e multitarefa preemptiva em sistemas operacionais?",
+        options: [
+          "Na multitarefa cooperativa, cada processo é responsável por liberar o controle da CPU, o que pode causar travamentos se um processo não colaborar. Já na multitarefa preemptiva, o sistema operacional decide quando interromper um processo para executar outro, garantindo que todos tenham tempo de CPU de forma justa e controlada.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Como o gerenciamento de memória é realizado em um sistema operacional moderno?",
+        options: [
+          "O gerenciamento de memória em sistemas operacionais modernos é feito por meio de técnicas como paginação e segmentação. Essas técnicas permitem que os programas usem mais memória do que a fisicamente disponível, utilizando memória virtual, além de proteger áreas de memória entre processos, evitando acessos indevidos e falhas.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "O que é escalonamento de processos e por que ele é importante?",
+        options: [
+          "O escalonamento de processos é o mecanismo pelo qual o sistema operacional decide qual processo será executado pela CPU. Ele é importante para garantir que os recursos sejam distribuídos de forma eficiente, justa e que os processos mais críticos tenham prioridade adequada, melhorando o desempenho geral do sistema.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Descreva o papel do sistema de arquivos dentro de um sistema operacional.",
+        options: [
+          "O sistema de arquivos organiza e gerencia como os dados são armazenados e recuperados no disco rígido ou em outros dispositivos de armazenamento. Ele permite que os arquivos sejam criados, lidos, modificados e deletados, mantendo a integridade dos dados e o controle de acesso por usuários e programas.",
+        ],
+        correct: 0,
+      },
+      {
+        question:
+          "Explique o conceito de deadlock e como ele pode ser evitado em sistemas operacionais.",
+        options: [
+          "Deadlock é uma situação em que dois ou mais processos ficam bloqueados, esperando indefinidamente por recursos que estão sendo usados uns pelos outros. Ele pode ser evitado com estratégias como a prevenção (evitando condições que levam ao deadlock), a detecção (identificando ciclos de espera) e a recuperação (encerrando processos ou liberando recursos para resolver o impasse).",
+        ],
+        correct: 0,
+      },
+    ],
+
     escritaProgramacao: [
       {
         question:
