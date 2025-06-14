@@ -11,7 +11,8 @@
   --cor-btn: #0661c2;
 }
 
-html, body {
+html,
+body {
   font-family: sans-serif;
   background-color: rgb(233, 235, 243);
   color: white;
@@ -75,9 +76,9 @@ ul {
 li {
   background: var(--cor-primaria);
   margin: 30px auto;
-  padding: 30px;
+  padding: 5px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   max-width: 100%;
   width: 98%;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
@@ -110,7 +111,7 @@ input {
   display: none;
 }
 
-.quiz-option:checked + .quiz-label {
+.quiz-option:checked+.quiz-label {
   background-color: white;
   color: black;
 }
@@ -126,9 +127,10 @@ input {
   color: black;
   text-shadow: 0 0 10px rgb(255, 255, 255);
   padding: 20px;
+  text-align: inherit;
   font-weight: bolder;
   border-radius: 5px;
-  border: 1px solid var(--cor-secundaria);
+  border: 1px solid var(--cor-primaria);
   margin: 20px 42px 25px 30px;
 }
 
@@ -136,9 +138,9 @@ input {
   margin: 20px auto;
   width: 98%;
   display: block;
-  padding: 15px;
+  padding: 10px;
   border: none;
-  border-radius: 15px;
+  border-radius: 12px;
   font-size: 13pt;
   cursor: pointer;
   background-color: var(--cor-primaria);
@@ -249,16 +251,11 @@ p {
   background: rgba(255, 255, 255, 0.973);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(0, 0, 0, 0.87);
-  border: none;
   padding: 5px 7px;
   font-weight: bold;
   border-radius: 50px;
   font-size: 8pt;
-  position: relative;
-  bottom: 120px;
-  right: 15px;
-  margin-right: 10px;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 1px black;
   float: left;
 }
 
@@ -273,10 +270,12 @@ p {
   padding: 12px;
   margin-top: 40px;
 }
-.sobre{
+
+.sobre {
   color: rgba(0, 0, 0, 0.608);
-  margin: 50px 40px 0px 40px;
+  margin: 20px 40px 0px 40px;
 }
+
 #start-quiz:hover {
   background: rgba(36, 178, 230, 0.152);
   color: rgb(40, 39, 39);
@@ -300,6 +299,14 @@ select {
   background: var(--cor-primaria);
   padding: 15px;
   border-radius: 5px;
+}
+
+.resposta-modelo {
+  background: var(--cor-secundaria);
+  margin: 10px 30px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12pt;
 }
 
 /* ========================
@@ -341,6 +348,7 @@ select {
 }
 
 @media (max-width: 600px) {
+
   #subject-select,
   .boxer,
   #start-quiz {
@@ -358,7 +366,7 @@ select {
     margin-bottom: -20px;
   }
 
-  .questao{
+  .questao {
     font-size: 11pt;
   }
 
