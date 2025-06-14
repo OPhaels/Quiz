@@ -1,5 +1,5 @@
 # Esse quiz serve para te ajudar com suas atividades relacionadas à TI. 
-ADS, Ciência da computação, engenharia de sistemas, etc... 
+Serve para treinar seu conhecimento e te ajudar nos estudos para a área da tecnologia. 
 
 Qualquer adição pode fazer um request que vou analisar para upar :) 
 

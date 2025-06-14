@@ -1,637 +1,369 @@
+// QUESTÕES GERAIS ------------------------------------ QUESTÕES GERAIS \\
+
 const questions = {
-  estrutura: [ // Estrutura de Computadores
+  estrutura: [ // Estrutura de Computadores -- perguntas atualizadas.
     {
-      question: "Qual é a função principal da placa-mãe?",
+      question: "Qual dispositivo de rede é mais apropriado para fornecer serviços de filtragem de pacotes com estado, filtragem de email e VPN?",
       options: [
-        "Armazenar os dados permanentemente",
-        "Processar gráficos complexos",
-        "Fornecer energia ao sistema",
-        "Conectar e interligar todos os componentes do computador",
-        "Executar somente sistemas operacionais",
+        "Roteador",
+        "Serviços de gerenciamento de terminal",
+        "Servidor proxy",
+        "UTM firewall",
+        "IDS (Sistema de Detecção de Intrusão)"
       ],
-      correct: 3,
+      correct: 3
     },
     {
-      question: "O que é considerado um dispositivo de entrada?",
-      options: ["Monitor", "Impressora", "Teclado", "HD", "Memória RAM"],
-      correct: 2,
-    },
-    {
-      question:
-        "Qual componente é responsável pelo processamento central das tarefas do computador?",
+      question: "Este tipo de conector leva alimentação elétrica para discos rígidos padrão IDE, unidades ópticas e outros dispositivos:",
       options: [
-        "Memória RAM",
-        "HD",
-        "Placa-mãe",
-        "Fonte de alimentação",
-        "CPU (processador)",
+        "Conector Molex",
+        "Conector Berg",
+        "Conector eSATA",
+        "Conector SATA",
+        "Conector de 20 pinos"
+      ],
+      correct: 0
+    },
+    {
+      question: "Qual das seguintes soluções é recomendada para aumentar significativamente a velocidade do computador em um servidor lento?",
+      options: [
+        "Aumentar a quantidade de memória RAM",
+        "Instalar uma placa de vídeo mais potente",
+        "Limpar os arquivos temporários e desfragmentar o HDD",
+        "Substituir o disco rígido (HDD) por um SSD",
+        "Substituir o processador por um mais potente"
+      ],
+      correct: 3
+    },
+    {
+      question: "Qual dos endereços IP pertence à mesma rede que 128.112.31.10 com máscara 255.0.0.0?",
+      options: [
+        "172.16.50.10",
+        "129.112.31.15",
+        "255.112.31.15",
+        "128.255.255.254",
+        "129.112.31.10"
+      ],
+      correct: 3
+    },
+    {
+      question: "Qual dos endereços IP NÃO pertence à mesma rede de 192.168.55.11 com máscara 255.255.0.0?",
+      options: [
+        "192.168.10.10",
+        "192.168.55.15",
+        "192.167.55.10",
+        "192.168.0.1",
+        "Nenhuma das respostas anteriores"
+      ],
+      correct: 2
+    },
+    {
+      question: "A ESD (descarga eletrostática) pode ocorrer quando:",
+      options: [
+        "Há acúmulo de carga elétrica em uma superfície que toca outra com carga diferente e pode causar danos ao equipamento",
+        "Há acúmulo de carga elétrica e não causa danos",
+        "Há acúmulo de corrente elétrica e pode causar danos",
+        "Há acúmulo de corrente elétrica sem causar danos",
+        "Há acúmulo de potência elétrica e pode causar danos"
+      ],
+      correct: 0
+    },
+    {
+      question: "Que tipo de malware se replica automaticamente sem a ação do usuário ao explorar vulnerabilidades?",
+      options: [
+        "Vírus",
+        "Ransomware",
+        "Spyware",
+        "Adware",
+        "Worm"
+      ],
+      correct: 4
+    },
+    {
+      question: "Qual dispositivo de rede toma decisões de encaminhamento com base no endereço MAC de destino?",
+      options: [
+        "Repetidor",
+        "Hub",
+        "Switch",
+        "Roteador",
+        "Nenhuma das alternativas"
+      ],
+      correct: 2
+    },
+    {
+      question: "Se as partes metálicas de um equipamento se tornarem energizadas, o que fornece caminho de menor resistência?",
+      options: [
+        "Terra",
+        "Disjuntor",
+        "Neutro",
+        "Capacitor",
+        "Fusível"
+      ],
+      correct: 0
+    },
+    {
+      question: "Qual camada do modelo OSI é responsável pelo estabelecimento de conexões únicas e autenticadas?",
+      options: [
+        "Camada de Sessão",
+        "Camada Física",
+        "Camada de Enlace",
+        "Camada de Rede",
+        "Camada de Apresentação"
+      ],
+      correct: 0
+    },
+    {
+      question: "Nos computadores pessoais, qual componente da placa-mãe controla dispositivos de alta velocidade como a memória e o slot PCIe?",
+      options: [
+        "Chipset ponte sul",
+        "Chipset ponte norte",
+        "Cache",
+        "Registradores",
+        "Chip de memória RAM"
+      ],
+      correct: 1
+    },
+    {
+      question: "Qual alternativa associa corretamente os tipos de memória ROM, PROM, EPROM e Flash?",
+      options: [
+        "2-1-3-4",
+        "1-3-4-2",
+        "3-4-2-1",
+        "2-1-4-3",
+        "1-2-3-4"
+      ],
+      correct: 4
+    },
+    {
+      question: "O BIOS possui várias funções. Quais itens estão corretos?",
+      options: [
+        "I, III e V",
+        "I, II e III",
+        "II e III",
+        "II, III e V",
+        "I, III e IV"
+      ],
+      correct: 3
+    },
+    {
+      question: "Qual endereço IP está na mesma rede de 172.16.55.11 com máscara 255.255.255.0?",
+      options: [
+        "172.16.50.10",
+        "172.16.50.15",
+        "172.16.56.100",
+        "172.16.55.25",
+        "172.18.55.11"
+      ],
+      correct: 3
+    },
+    {
+      question: "Selecione a opção que identifica corretamente os chipsets e a CPU:",
+      options: [
+        "1-CPU, 2-northbridge, 3-southbridge",
+        "1-northbridge, 2-CPU, 3-southbridge",
+        "1-southbridge, 2-CPU, 3-northbridge",
+        "1-CPU, 2-southbridge, 3-northbridge",
+        "1-southbridge, 2-northbridge, 3-CPU"
+      ],
+      correct: 0
+    }
+  ],
+  arquitetura: [ // atualizada
+    {
+      question: "Quais são as principais limitações dos bancos de dados relacionais quando se trabalha com dados não estruturados?",
+      options: [
+        "Dificuldade em armazenar grandes volumes de dados",
+        "Necessidade de esquema fixo",
+        "Baixa performance para operações complexas",
+        "Falta de suporte a escalabilidade horizontal",
+        "Todas as anteriores",
       ],
       correct: 4,
     },
     {
-      question: "Qual é a função da memória RAM?",
+      question: "Sobre a implementação de uma arquitetura de sistemas em uma organização, qual alternativa está correta?",
       options: [
-        "Armazenar dados permanentemente",
-        "Processar imagens gráficas",
-        "Armazenar temporariamente dados em uso",
-        "Fornecer energia ao computador",
-        "Gerenciar arquivos do sistema",
+        "Pode ser realizada sem planejamento prévio",
+        "Dispensa a análise de impacto nos negócios",
+        "É exclusivamente uma responsabilidade de TI",
+        "É algo alheio a questões de segurança dos dados",
+        "Requer planejamento estratégico e técnico",
       ],
-      correct: 2,
-    },
-    {
-      question: "O que caracteriza a memória ROM?",
-      options: [
-        "Memória volátil e rápida",
-        "Armazena dados temporários",
-        "Pode ser regravada frequentemente",
-        "Armazena dados permanentemente e não volátil",
-        "Armazena arquivos de usuário",
-      ],
-      correct: 3,
-    },
-    {
-      question: "Qual dos seguintes é um exemplo de dispositivo de saída?",
-      options: ["Mouse", "Scanner", "Impressora", "Teclado", "Webcam"],
-      correct: 2,
-    },
-    {
-      question: "O que é um SSD?",
-      options: [
-        "Tipo de processador",
-        "Sistema operacional",
-        "Tipo de memória RAM",
-        "Unidade de armazenamento sólido",
-        "Software de segurança",
-      ],
-      correct: 3,
-    },
-    {
-      question: "A principal função da fonte de alimentação é:",
-      options: [
-        "Controlar a temperatura interna",
-        "Armazenar dados",
-        "Converter energia elétrica para os componentes",
-        "Processar gráficos",
-        "Exibir imagens na tela",
-      ],
-      correct: 2,
-    },
-    {
-      question: "O que diferencia um HD de um SSD?",
-      options: [
-        "HD é mais rápido que SSD",
-        "SSD usa partes móveis",
-        "HD é mais resistente a quedas",
-        "SSD é mais rápido e não tem partes móveis",
-        "Ambos têm mesma velocidade",
-      ],
-      correct: 3,
-    },
-    {
-      question: "A placa de vídeo dedicada serve principalmente para:",
-      options: [
-        "Aumentar a capacidade de armazenamento",
-        "Controlar a rede local",
-        "Processar imagens e vídeos com mais eficiência",
-        "Ampliar a memória RAM",
-        "Proteger contra vírus",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Qual item é considerado um periférico de entrada e saída?",
-      options: ["Scanner", "Microfone", "Monitor", "Pen drive", "Teclado"],
-      correct: 3,
-    },
-    {
-      question: "O barramento de dados tem a função de:",
-      options: [
-        "Alimentar o processador",
-        "Conectar apenas a memória RAM",
-        "Transportar sinais elétricos de energia",
-        "Transportar informações entre os componentes",
-        "Controlar o cooler",
-      ],
-      correct: 3,
-    },
-    {
-      question: "O BIOS é responsável por:",
-      options: [
-        "Carregar o sistema operacional a partir da internet",
-        "Processar imagens no sistema",
-        "Iniciar o hardware e carregar o sistema operacional",
-        "Proteger o computador contra vírus",
-        "Aumentar a velocidade da memória RAM",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Qual das alternativas representa um tipo de slot de expansão?",
-      options: ["HDMI", "VGA", "PCI Express", "USB", "SATA"],
-      correct: 2,
-    },
-    {
-      question: "Um cooler é utilizado para:",
-      options: [
-        "Reforçar a placa de vídeo",
-        "Aumentar a capacidade da fonte",
-        "Arrefecer os componentes do computador",
-        "Estabilizar a internet",
-        "Processar arquivos com mais rapidez",
-      ],
-      correct: 2,
-    },
-    {
-      question: "Qual das opções é considerada memória volátil?",
-      options: ["SSD", "HD", "ROM", "Cache", "RAM"],
       correct: 4,
     },
     {
-      question: "Qual o papel do chipset na placa-mãe?",
+      question: "Marque a alternativa correta sobre os benefícios da comunicação assíncrona entre serviços:",
       options: [
-        "Ampliar o som do sistema",
-        "Controlar o sistema operacional",
-        "Gerenciar comunicação entre processador, memória e periféricos",
-        "Fornecer energia à placa de vídeo",
-        "Instalar programas automaticamente",
+        "Facilita a integração entre serviços, permitindo que a disponibilidade de um serviço não impacte diretamente outro",
+        "Elimina a necessidade de filas de mensagens",
+        "É ideal para transações financeiras que requerem confirmação imediata",
+        "Não pode ser utilizada em sistemas que precisam de alta disponibilidade",
+        "Exige que todos os serviços estejam disponíveis simultaneamente",
+      ],
+      correct: 0,
+    },
+    {
+      question: "Sobre as vantagens da arquitetura orientada a serviços (SOA), marque a alternativa correta:",
+      options: [
+        "Facilita a escalabilidade e a modularidade",
+        "Garante consistência de dados em tempo real",
+        "Depende de uma base de dados monolítica",
+        "Evita a necessidade de qualquer forma de monitoramento",
+        "Simplifica a integração de serviços legados",
+      ],
+      correct: 0,
+    },
+    {
+      question: "Sobre os desafios na implementação e manutenção de uma arquitetura de sistemas, marque a alternativa correta:",
+      options: [
+        "Todos os sistemas são inerentemente simples de integrar",
+        "Inexistem desafios no caso de arquiteturas monolíticas atualmente",
+        "A escalabilidade é automaticamente garantida pelo blockchain",
+        "A comunicação entre serviços distribuídos pode ser complexa",
+        "Os custos são irrelevantes na escolha da arquitetura",
+      ],
+      correct: 3,
+    },
+    {
+      question: "Considere as seguintes afirmativas sobre resiliência em sistemas de software:",
+      options: [
+        "Arquiteturas baseadas em microservices permitem maior resiliência",
+        "A replicação ativa-ativa diminui a resiliência",
+        "Ferramentas de monitoramento como Prometheus e Grafana melhoram a resiliência",
+        "Todas estão corretas",
+        "Nenhuma está correta",
+      ],
+      correct: 3,
+    },
+    {
+      question: "Sobre a aplicação do padrão MVP (Model-View-Presenter), qual afirmativa é correta?",
+      options: [
+        "O Presenter atua como controlador direto do banco de dados",
+        "A View comunica-se diretamente com o Model",
+        "O Presenter interage com o Model e atualiza a View",
+        "O Model recebe eventos da View diretamente",
+        "O MVP não se aplica a interfaces gráficas",
       ],
       correct: 2,
     },
     {
-      question:
-        "O que acontece quando falta dissipação térmica em um processador?",
+      question: "No padrão MVC, qual das seguintes assertivas é verdadeira?",
       options: [
-        "O computador acelera",
-        "O sistema se reinicia por segurança",
-        "A memória RAM é apagada",
-        "O HD queima",
-        "O monitor desliga",
+        "O Controller atua como intermediário entre a View e o Model",
+        "A View realiza o controle das regras de negócio",
+        "O Model é responsável apenas por exibir os dados",
+        "O Controller não interage com o usuário",
+        "A View atualiza o Model diretamente",
+      ],
+      correct: 0,
+    },
+    {
+      question: "No contexto do DevOps, marque a alternativa correta sobre responsabilidade compartilhada:",
+      options: [
+        "Os operadores assumem total responsabilidade pela correção de falhas",
+        "As equipes de desenvolvimento concentram-se apenas em novas funcionalidades",
+        "Elimina a necessidade de colaboração entre equipes",
+        "Reduz a necessidade de automação",
+        "Promove maior cuidado com o código, pois devs também operam em produção",
+      ],
+      correct: 4,
+    },
+    {
+      question: "Considere as afirmações a seguir sobre segurança em sistemas:",
+      options: [
+        "Somente a I",
+        "Somente I e III",
+        "Somente a III",
+        "Somente I e II",
+        "Somente II e III",
       ],
       correct: 1,
     },
     {
-      question: "Qual componente armazena o sistema operacional?",
+      question: "Sobre as tendências em arquitetura de software, marque a alternativa correta:",
       options: [
-        "Memória RAM",
-        "BIOS",
-        "Processador",
-        "HD ou SSD",
-        "Placa de rede",
+        "V - F - V",
+        "V - F - F",
+        "V - V - F",
+        "F - V - V",
+        "F - F - V",
+      ],
+      correct: 0,
+    },
+    {
+      question: "Sobre a manutenção de sistemas, quais assertivas são verdadeiras?",
+      options: [
+        "Somente a I",
+        "Somente I e III",
+        "Somente a III",
+        "Somente I e II",
+        "Somente a II",
+      ],
+      correct: 1
+    },
+    {
+      question:
+        "Qual é a principal limitação do modelo de banco de dados chave-valor?",
+      options: [
+        "Dificuldade de armazenar dados complexos",
+        "Falta de escalabilidade",
+        "Necessidade de transações complexas",
+        "Dificuldade em realizar buscas eficientes",
+        "Falta de flexibilidade no esquema",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Qual é a principal vantagem do modelo de banco NoSQL de colunas para aplicações analíticas?",
+      options: [
+        "Armazenamento eficiente de dados tabulares",
+        "Otimização para consultas de agregação e leitura de grandes volumes",
+        "Suporte a relacionamentos entre dados",
+        "Fácil de usar com SQL",
+        "Baixa latência nas operações de leitura e escrita",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "Qual tecnologia é comumente usada para facilitar a replicação e a consistência em bancos de dados NoSQL?",
+      options: [
+        "MapReduce",
+        "Sharding",
+        "Consistência forte",
+        "CAP Theorem",
+        "Eventos de stream",
       ],
       correct: 3,
     },
     {
       question:
-        "Qual das opções abaixo é uma unidade de medida de frequência usada para processadores?",
-      options: ["MB", "GB", "TB", "GHz", "RPM"],
-      correct: 3,
+        "Em qual situação seria mais vantajoso utilizar um banco de dados NoSQL em vez de um relacional?",
+      options: [
+        "Quando a aplicação requer suporte a transações complexas e fortes garantias de consistência",
+        "Quando os dados são altamente estruturados e não mudam com frequência",
+        "Quando a aplicação precisa armazenar grandes volumes de dados variáveis e não estruturados",
+        "Quando o acesso a dados requer muitas junções entre tabelas",
+        "Quando a aplicação exige transações ACID em tempo real",
+      ],
+      correct: 2,
+    },
+    {
+      question:
+        "Quais são as vantagens da arquitetura de armazenamento distribuído em bancos de dados NoSQL?",
+      options: [
+        "Aumento na complexidade de gerenciamento",
+        "Melhora da disponibilidade e escalabilidade do sistema",
+        "Redução de custos de hardware",
+        "Fácil implementação em bancos relacionais",
+        "Redução da necessidade de replicação",
+      ],
+      correct: 1,
     },
   ],
-  sistemas:
-    [
-      {
-        question: "O que é um sistema operacional?",
-        options: [
-          "Um tipo de aplicativo para escritório",
-          "Software que gerencia o hardware e o software de um computador",
-          "Um programa de edição de imagens",
-          "Um antivírus",
-          "Um tipo de rede local",
-        ],
-        correct: 1,
-      },
-      {
-        question: "Qual das opções abaixo é função de um sistema operacional?",
-        options: [
-          "Desenhar interfaces gráficas",
-          "Executar comandos de rede",
-          "Gerenciar recursos do sistema, como CPU, memória e armazenamento",
-          "Compactar arquivos automaticamente",
-          "Atualizar drivers de terceiros",
-        ],
-        correct: 2,
-      },
-      {
-        question: "O que é escalonamento de processos?",
-        options: [
-          "Criação de novos arquivos",
-          "Execução de backups automáticos",
-          "Escolha de qual processo será executado pela CPU",
-          "Compressão de dados da memória RAM",
-          "Limpeza de registros temporários",
-        ],
-        correct: 2,
-      },
-      {
-        question: "O que caracteriza um sistema operacional multitarefa?",
-        options: [
-          "Capacidade de trabalhar com vários usuários",
-          "Capacidade de executar vários programas ao mesmo tempo",
-          "Capacidade de rodar apenas programas gráficos",
-          "Capacidade de rodar apenas aplicativos em nuvem",
-          "Execução de tarefas exclusivamente em tempo real",
-        ],
-        correct: 1,
-      },
-      {
-        question: "Qual o papel do gerenciador de memória em um sistema operacional?",
-        options: [
-          "Controlar a interface gráfica do usuário",
-          "Monitorar o uso de processadores",
-          "Gerenciar o uso e a alocação de memória RAM",
-          "Configurar redes locais",
-          "Atualizar programas automaticamente",
-        ],
-        correct: 2,
-      },
-      {
-        question: "O que é um processo em um sistema operacional?",
-        options: [
-          "Uma instrução lógica",
-          "Uma conexão com a internet",
-          "Um programa em execução",
-          "Um arquivo de texto",
-          "Uma função de rede",
-        ],
-        correct: 2,
-      },
-      {
-        question: "Quais são os estados possíveis de um processo?",
-        options: [
-          "Novo, Pronto, Executando, Esperando, Terminado",
-          "Aberto, Em edição, Fechado",
-          "Ligado, Em espera, Desligado",
-          "Instalado, Rodando, Parado",
-          "Conectado, Desconectado, Bloqueado",
-        ],
-        correct: 0,
-      },
-      {
-        question: "O que é um deadlock?",
-        options: [
-          "Processo que termina corretamente",
-          "Erro de memória RAM",
-          "Situação em que dois ou mais processos ficam esperando indefinidamente por recursos",
-          "Atualização forçada do sistema",
-          "Desligamento inesperado",
-        ],
-        correct: 2,
-      },
-      {
-        question: "Qual é a função do sistema de arquivos?",
-        options: [
-          "Melhorar a internet do computador",
-          "Organizar e armazenar arquivos no disco",
-          "Proteger o computador contra vírus",
-          "Aumentar a velocidade da CPU",
-          "Atualizar o sistema operacional",
-        ],
-        correct: 1,
-      },
-      {
-        question: "Qual sistema operacional é baseado em código aberto?",
-        options: [
-          "Windows",
-          "macOS",
-          "Linux",
-          "iOS",
-          "Android",
-        ],
-        correct: 2,
-      },
-      {
-        question: "O que é uma interrupção no contexto de sistemas operacionais?",
-        options: [
-          "Um erro crítico",
-          "Um comando de desligamento",
-          "Um sinal que pausa a CPU para lidar com eventos externos",
-          "Uma reinicialização automática",
-          "Um alerta sonoro do sistema",
-        ],
-        correct: 2,
-      },
-      {
-        question: "O que faz a chamada de sistema (system call)?",
-        options: [
-          "Abre aplicativos gráficos",
-          "Permite que programas de usuário solicitem serviços ao sistema operacional",
-          "Conecta o computador à internet",
-          "Aumenta a velocidade do processador",
-          "Faz backup automático de arquivos",
-        ],
-        correct: 1,
-      },
-      {
-        question: "Qual destes não é um sistema operacional?",
-        options: [
-          "Linux",
-          "Windows",
-          "Oracle",
-          "macOS",
-          "Android",
-        ],
-        correct: 2,
-      },
-      {
-        question: "Qual destes é um exemplo de sistema operacional em tempo real (RTOS)?",
-        options: [
-          "Windows 10",
-          "Linux Mint",
-          "FreeRTOS",
-          "Ubuntu",
-          "macOS Ventura",
-        ],
-        correct: 2,
-      },
-      {
-        question: "O que é o kernel do sistema operacional?",
-        options: [
-          "A interface gráfica de usuário",
-          "O programa de instalação",
-          "O núcleo do sistema, responsável por intermediar hardware e software",
-          "O nome do usuário administrador",
-          "Uma função da rede Wi-Fi",
-        ],
-        correct: 2,
-      },
-      {
-        question: "Quais são os dois tipos principais de kernel?",
-        options: [
-          "Modular e absoluto",
-          "Híbrido e lógico",
-          "Monolítico e microkernel",
-          "Virtual e real",
-          "Conectado e desconectado",
-        ],
-        correct: 2,
-      },
-      {
-        question: "O que é swapping?",
-        options: [
-          "Troca de hardware defeituoso",
-          "Transferência de arquivos para o pen drive",
-          "Movimentação de processos entre a memória principal e o disco",
-          "Desfragmentação do disco",
-          "Criação de backups automáticos",
-        ],
-        correct: 2,
-      },
-      {
-        question: "Qual destes sistemas operacionais é mais usado em smartphones?",
-        options: [
-          "Linux Fedora",
-          "Ubuntu",
-          "Android",
-          "Windows Phone",
-          "FreeBSD",
-        ],
-        correct: 2,
-      },
-      {
-        question: "Para que serve o gerenciador de dispositivos em um sistema operacional?",
-        options: [
-          "Aumentar a velocidade do disco rígido",
-          "Atualizar o sistema automaticamente",
-          "Controlar e monitorar os dispositivos conectados ao computador",
-          "Gerar relatórios de segurança",
-          "Controlar a internet",
-        ],
-        correct: 2,
-      },
-      {
-        question: "Qual a principal vantagem de um sistema operacional com interface gráfica?",
-        options: [
-          "Consome menos memória",
-          "Possui maior velocidade de rede",
-          "Facilita a interação do usuário com o sistema",
-          "Permite a execução de programas em segundo plano",
-          "Melhora a segurança contra vírus",
-        ],
-        correct: 2,
-      }
-    ],
 
-  arquitetura: // Arquiterura de sistemas
-    [
-      {
-        question:
-          "Quais são as principais limitações dos bancos de dados relacionais quando se trabalha com dados não estruturados?",
-        options: [
-          "Dificuldade em armazenar grandes volumes de dados",
-          "Necessidade de esquema fixo",
-          "Baixa performance para operações complexas",
-          "Falta de suporte a escalabilidade horizontal",
-          "Todas as anteriores",
-        ],
-        correct: 4,
-      },
-      {
-        question:
-          "Qual é a principal vantagem dos bancos NoSQL sobre os relacionais para aplicações que lidam com Big Data?",
-        options: [
-          "Maior flexibilidade e escalabilidade",
-          "Melhor suporte a transações",
-          "Suporte a relacionamentos complexos",
-          "Consultas otimizadas para dados tabulares",
-          "Consistência forte por padrão",
-        ],
-        correct: 0,
-      },
-      {
-        question:
-          "Em um banco de dados NoSQL baseado em documentos, qual é o formato mais comum para armazenar dados?",
-        options: ["JSON", "XML", "BSON", "YAML", "CSV"],
-        correct: 0,
-      },
-      {
-        question:
-          "Qual tipo de banco NoSQL é mais indicado para armazenar dados que precisam ser consultados com base em relações complexas entre entidades?",
-        options: ["Documentos", "Grafos", "Colunar", "Chave-Valor", "Relações"],
-        correct: 1,
-      },
-      {
-        question:
-          "Quais são os principais benefícios da escalabilidade horizontal em bancos de dados NoSQL?",
-        options: [
-          "Permite adicionar mais servidores para melhorar o desempenho",
-          "Reduz os custos de manutenção com servidores dedicados",
-          "Garante alta consistência em transações",
-          "Fácil de implementar em bancos relacionais",
-          "Melhora a performance apenas com o aumento de hardware",
-        ],
-        correct: 0,
-      },
-      {
-        question:
-          "No modelo de banco de dados NoSQL, o que caracteriza a 'consistência eventual'?",
-        options: [
-          "Os dados são consistentes em todos os nós ao mesmo tempo",
-          "O banco garante que os dados sempre estarão disponíveis",
-          "Os dados podem não estar sincronizados entre os nós no início, mas eventualmente se alinham",
-          "Os dados são sincronizados imediatamente entre os nós",
-          "Todos os nós têm acesso instantâneo aos dados",
-        ],
-        correct: 2,
-      },
-      {
-        question:
-          "Qual é a principal diferença entre um banco de dados NoSQL colunar e um banco de dados relacional?",
-        options: [
-          "A estrutura de dados em tabelas no banco relacional e em colunas no banco NoSQL colunar",
-          "A capacidade de realizar joins entre diferentes tabelas",
-          "O suporte a dados não estruturados",
-          "O uso de linguagens de consulta baseadas em SQL",
-          "A exigência de esquema fixo no NoSQL",
-        ],
-        correct: 0,
-      },
-      {
-        question:
-          "Qual modelo de banco de dados NoSQL é mais apropriado para armazenar e gerenciar grandes volumes de dados de sensores em tempo real (IoT)?",
-        options: [
-          "Banco de documentos",
-          "Banco de grafos",
-          "Banco chave-valor",
-          "Banco colunar",
-          "Banco relacional",
-        ],
-        correct: 3,
-      },
-      {
-        question: "No contexto de bancos de dados NoSQL, o que é 'sharding'?",
-        options: [
-          "Uma técnica de replicação de dados para alta disponibilidade",
-          "O processo de dividir dados em múltiplos servidores para escalabilidade",
-          "Uma técnica de backup de dados",
-          "O processo de normalização de dados",
-          "A estratégia de gerenciamento de conexões simultâneas",
-        ],
-        correct: 1,
-      },
-      {
-        question:
-          "Quais são as principais desvantagens de usar bancos NoSQL para sistemas que requerem transações complexas e consistência forte?",
-        options: [
-          "Falta de suporte a transações ACID",
-          "Dificuldade em escalar horizontalmente",
-          "Baixa performance em consultas simples",
-          "Suporte inadequado para dados não estruturados",
-          "Todas as anteriores",
-        ],
-        correct: 0,
-      },
-      {
-        question:
-          "Qual das seguintes opções é um exemplo de um banco de dados NoSQL chave-valor?",
-        options: ["MongoDB", "Neo4j", "Cassandra", "Redis", "CouchDB"],
-        correct: 3,
-      },
-      {
-        question:
-          "Qual é a principal característica dos bancos de dados NoSQL baseados em grafos?",
-        options: [
-          "Eles armazenam dados em tabelas e colunas",
-          "Eles modelam dados como uma rede de nós e arestas",
-          "Eles são otimizados para armazenar grandes volumes de dados",
-          "Eles utilizam o modelo chave-valor",
-          "Eles são projetados apenas para dados temporários",
-        ],
-        correct: 1,
-      },
-      {
-        question:
-          "Quais são os principais desafios de manter a consistência em sistemas distribuídos, como bancos de dados NoSQL?",
-        options: [
-          "Garantir que todos os nós têm os mesmos dados ao mesmo tempo",
-          "Garantir alta performance com grandes volumes de dados",
-          "Manter a baixa latência em transações complexas",
-          "Armazenar dados temporários sem necessidade de replicação",
-          "Gerenciar a distribuição de dados em diferentes zonas geográficas",
-        ],
-        correct: 0,
-      },
-      {
-        question:
-          "Qual banco de dados NoSQL é mais indicado para armazenar e analisar grandes volumes de dados analíticos e de séries temporais?",
-        options: ["Cassandra", "MongoDB", "Neo4j", "Redis", "HBase"],
-        correct: 4,
-      },
-      {
-        question:
-          "Quando se usa um banco de dados NoSQL baseado em documentos, qual vantagem ele oferece sobre um banco relacional para o armazenamento de dados estruturados e semi-estruturados?",
-        options: [
-          "Capacidade de armazenar dados com esquemas flexíveis",
-          "Capacidade de realizar operações de junção entre múltiplas coleções",
-          "Suporte a transações complexas ACID",
-          "Armazenamento eficiente de dados de séries temporais",
-          "Exigência de esquemas fixos para todos os documentos",
-        ],
-        correct: 0,
-      },
-      {
-        question:
-          "Qual é a principal limitação do modelo de banco de dados chave-valor?",
-        options: [
-          "Dificuldade de armazenar dados complexos",
-          "Falta de escalabilidade",
-          "Necessidade de transações complexas",
-          "Dificuldade em realizar buscas eficientes",
-          "Falta de flexibilidade no esquema",
-        ],
-        correct: 0,
-      },
-      {
-        question:
-          "Qual é a principal vantagem do modelo de banco NoSQL de colunas para aplicações analíticas?",
-        options: [
-          "Armazenamento eficiente de dados tabulares",
-          "Otimização para consultas de agregação e leitura de grandes volumes",
-          "Suporte a relacionamentos entre dados",
-          "Fácil de usar com SQL",
-          "Baixa latência nas operações de leitura e escrita",
-        ],
-        correct: 1,
-      },
-      {
-        question:
-          "Qual tecnologia é comumente usada para facilitar a replicação e a consistência em bancos de dados NoSQL?",
-        options: [
-          "MapReduce",
-          "Sharding",
-          "Consistência forte",
-          "CAP Theorem",
-          "Eventos de stream",
-        ],
-        correct: 3,
-      },
-      {
-        question:
-          "Em qual situação seria mais vantajoso utilizar um banco de dados NoSQL em vez de um relacional?",
-        options: [
-          "Quando a aplicação requer suporte a transações complexas e fortes garantias de consistência",
-          "Quando os dados são altamente estruturados e não mudam com frequência",
-          "Quando a aplicação precisa armazenar grandes volumes de dados variáveis e não estruturados",
-          "Quando o acesso a dados requer muitas junções entre tabelas",
-          "Quando a aplicação exige transações ACID em tempo real",
-        ],
-        correct: 2,
-      },
-      {
-        question:
-          "Quais são as vantagens da arquitetura de armazenamento distribuído em bancos de dados NoSQL?",
-        options: [
-          "Aumento na complexidade de gerenciamento",
-          "Melhora da disponibilidade e escalabilidade do sistema",
-          "Redução de custos de hardware",
-          "Fácil implementação em bancos relacionais",
-          "Redução da necessidade de replicação",
-        ],
-        correct: 1,
-      },
-    ],
-
-  programacao:  // Programação para dispositivos móveis
+  programacao:  // Programação para dispositivos móveis | Atualizadas.
     [
       {
         question:
@@ -738,100 +470,82 @@ const questions = {
         correct: 0,
       },
       {
-        question:
-          "Qual dos seguintes é um framework de desenvolvimento híbrido para apps móveis?",
-        options: ["Vue.js", "Angular", "Flutter", "Ember.js", "Express"],
-        correct: 2,
+        question: "Quais são os dois principais sistemas operacionais para desenvolvimento móvel mencionados no texto?",
+        options: [
+          "Windows e macOS",
+          "Nenhuma das respostas anteriores",
+          "Java e Swift",
+          "Linux e Ubuntu",
+          "Android e iOS",
+        ],
+        correct: 4,
       },
       {
-        question:
-          "No iOS, qual dos seguintes componentes de UI é utilizado para transições entre telas?",
+        question: "Quais recursos podem ser explorados no desenvolvimento de aplicativos móveis?",
         options: [
-          "Tab Bar",
-          "Page Control",
-          "Navigation Bar",
-          "Gesture Recognizers",
-          "Alert View",
+          "Nenhuma das alternativas",
+          "Microfone, teclado virtual e monitor interno",
+          "Câmera, localização geográfica e sensores diversos",
+          "Teclado físico, monitor externo e impressora",
+          "Scanner de documentos, mouse e touchpad",
         ],
         correct: 2,
       },
       {
-        question: "No Android, o que é o `RecyclerView`?",
+        question: "Por que o mercado de aplicativos móveis é considerado em franca expansão?",
         options: [
-          "Uma lista para exibir dados em tela",
-          "Uma transição de tela",
-          "Um tipo de banco de dados",
-          "Um framework de UI",
-          "Uma biblioteca de áudio",
+          "Pela preferência dos usuários por dispositivos móveis",
+          "Pela constante inovação e crescimento do setor",
+          "Pela disponibilidade de recursos exclusivos nos smartphones",
+          "Todas as respostas anteriores",
+          "Pelo baixo custo de desenvolvimento de aplicativos móveis",
         ],
-        correct: 0,
+        correct: 3,
       },
       {
-        question: "O que são **Widgets** no contexto de dispositivos móveis?",
+        question: "Quais são os objetivos de aprender sobre design de interação para aplicativos móveis?",
         options: [
-          "Elementos de interface que podem ser usados em várias telas",
-          "Recursos para interagir com a câmera",
-          "Funções de rede",
-          "Componentes de armazenamento local",
-          "Configurações de áudio",
-        ],
-        correct: 0,
-      },
-      {
-        question: "Qual é o objetivo principal do **Flutter**?",
-        options: [
-          "Desenvolver apps nativos para Android",
-          "Desenvolver apps móveis multiplataforma",
-          "Criar sites interativos",
-          "Criar interfaces para dispositivos desktop",
-          "Criar bancos de dados locais",
-        ],
-        correct: 1,
-      },
-      {
-        question: "No desenvolvimento Android, qual a função do `Manifest.xml`?",
-        options: [
-          "Definir a interface do usuário",
-          "Gerenciar as dependências do projeto",
-          "Configurar permissões e atividades do app",
-          "Criar banco de dados local",
-          "Definir transições entre telas",
+          "Compreender as diretrizes para o design de interação",
+          "Nenhuma das respostas anteriores",
+          "Todas as alternativas anteriores",
+          "Identificar os principais desafios de desenvolvimento de aplicativos móveis",
+          "Operacionalizar as diretrizes de interação",
         ],
         correct: 2,
       },
       {
-        question: "No iOS, o que são **Gestures**?",
+        question: "Para quais aspectos do desenvolvimento de aplicativos as diretrizes fornecem ajuda aos desenvolvedores?",
         options: [
-          "Comandos de voz",
-          "Ações de interação do usuário com a tela (toque, deslizar, etc.)",
-          "Botões de navegação",
-          "Controles de hardware",
-          "Gestões de armazenamento local",
+          "Depuração e testes",
+          "Configuração do servidor backend",
+          "Nenhuma das respostas anteriores",
+          "Design da interface do usuário",
+          "Estratégias de marketing de aplicativos",
         ],
-        correct: 1,
+        correct: 3,
       },
       {
-        question: "O que é o **Firebase** no contexto de desenvolvimento móvel?",
+        question: "Por que o desenvolvimento de aplicativos móveis pode ser desafiador no início?",
         options: [
-          "Uma ferramenta para criar interfaces de usuário",
-          "Uma plataforma de backend como serviço",
-          "Um framework de desenvolvimento",
-          "Uma biblioteca de animação",
-          "Um sistema de gerenciamento de banco de dados local",
+          "Nenhuma das alternativas",
+          "Devido à falta de criatividade na utilização dos recursos",
+          "Devido às restrições de tela dos smartphones",
+          "Por conta das limitações de hardware dos dispositivos móveis",
+          "Pelas diferentes linguagens e plataformas envolvidas",
         ],
-        correct: 1,
+        correct: 4,
       },
       {
-        question: "O que são **Notificações Push**?",
+        question: "Qual é uma das vantagens do desenvolvimento de aplicativos móveis em relação à computação convencional?",
         options: [
-          "Mensagens enviadas pelo servidor para o dispositivo móvel",
-          "Funções de rede",
-          "Alertas gerados pelo sistema operacional",
-          "Armazenamento de dados no dispositivo",
-          "Animações entre telas",
+          "Todas as opções anteriores",
+          "Maior capacidade de processamento",
+          "Acesso a recursos como câmera e sensores diversos",
+          "Interface de usuário mais intuitiva",
+          "Maior segurança dos dados",
         ],
         correct: 0,
-      },
+      }
     ],
 
   fundamentos: // Fundamentos de sistemas de informação
@@ -1047,41 +761,35 @@ const questions = {
     ],
 };
 
+// ESCRITAS --------------------------------- ESCRITAS \\
+
 const escritas = [
   {
-    escritaArquitetura: [
+    escritaArquitetura: [ // atualizadas
       {
         question:
-          "O que é uma arquitetura de dados não relacional e como ela difere da arquitetura relacional tradicional?",
+          "Descreva como técnicas de retry & fallback podem ser utilizadas para aumentar a resiliência do sistema, minimizando os impactos das falhas.",
         options: [
-          "A arquitetura de dados não relacional é baseada em bancos de dados NoSQL, que armazenam dados em formatos flexíveis como documentos, colunas, grafos ou pares chave-valor. Diferente da arquitetura relacional, que usa tabelas fixas e esquema rígido, a arquitetura não relacional permite estruturas dinâmicas, escalabilidade horizontal e melhor desempenho para grandes volumes de dados não estruturados ou semi-estruturados.",
+          "A resiliência em um sistema de microservices pode ser implementada através de técnicas de retry & fallback, que permitem ao sistema tentar novamente uma operação em caso de falha, ou recorrer a um método alternativo caso a operação falhe repetidamente. Por exemplo, no serviço de pagamento, se uma tentativa de processar um pagamento falhar devido a uma indisponibilidade temporária do serviço, o sistema pode automaticamente tentar novamente após um intervalo de tempo definido (retry). Se após várias tentativas o serviço ainda estiver indisponível, o sistema pode então acionar um fallback, como a utilização de um método de pagamento alternativo ou a colocação do pedido em uma fila para processamento posterior.",
         ],
         correct: 0,
       },
       {
         question:
-          "Quais são os principais tipos de bancos de dados não relacionais e suas características?",
+          "Explique como o padrão MVP facilita a manutenção e a evolução de uma aplicação, utilizando um exemplo prático para ilustrar a interação entre o Model, a View e o Presenter.",
         options: [
-          "Os principais tipos são: Documentos (ex: MongoDB) que armazenam dados em JSON/BSON, ideais para estruturas flexíveis; Colunar (ex: Cassandra) que organizam dados por colunas, otimizando consultas analíticas; Chave-valor (ex: Redis) que usam uma chave única para acessar um valor, ideais para cache e alta performance; Grafos (ex: Neo4j) que representam dados com vértices e arestas, úteis para redes sociais e conexões complexas.",
+          "O padrão MVP facilita a manutenção e evolução de uma aplicação ao desacoplar as responsabilidades entre Model, View e Presenter. Isso permite que mudanças em um componente sejam feitas de forma isolada, sem afetar os outros componentes. Por exemplo, o Model contém a lógica de negócio, o Presenter atua como intermediário, processando a lógica e atualizando a View, enquanto a View se limita à interface com o usuário.",
         ],
         correct: 0,
       },
       {
         question:
-          "Quais as vantagens da arquitetura não relacional para aplicações modernas?",
+          "Descreva como a prática de responsabilidade compartilhada e monitoramento contínuo no DevOps contribui para a estabilidade e resiliência do sistema.",
         options: [
-          "As principais vantagens são: escalabilidade horizontal, fácil de crescer adicionando servidores; alta performance em leitura/escrita para grandes volumes de dados; flexibilidade de esquemas, permitindo mudanças rápidas nos dados; e compatibilidade com big data e ambientes distribuídos, como nuvem.",
+          "A responsabilidade compartilhada no DevOps garante que as equipes de desenvolvimento estejam diretamente envolvidas na operação do software em produção, o que contribui para uma maior atenção aos detalhes durante o processo de desenvolvimento. Ferramentas como Prometheus e Grafana permitem o monitoramento em tempo real e alertas imediatos, facilitando a detecção e resolução rápida de falhas, aumentando a estabilidade e resiliência do sistema.",
         ],
         correct: 0,
-      },
-      {
-        question:
-          "Em quais cenários é mais indicado usar uma arquitetura de dados não relacional?",
-        options: [
-          "É mais indicada em: Aplicações com grandes volumes de dados não estruturados (ex: redes sociais); sistemas com alta taxa de leitura/escrita (ex: e-commerce, logs, jogos online); ambientes que exigem alta escalabilidade e disponibilidade; e situações onde o esquema dos dados muda com frequência.",
-        ],
-        correct: 0,
-      },
+      }
     ],
     escritaFundamentos: [
       {
@@ -1117,41 +825,32 @@ const escritas = [
         correct: 0,
       },
     ],
-    escritaEstrutura: [
+    escritaEstrutura: [ // atualizada
       {
         question:
-          "Explique a função da placa-mãe em um computador e por que ela é essencial para o funcionamento do sistema.",
+          "Explique como o padrão MVP (Model-View-Presenter) facilita a manutenção e evolução de uma aplicação, utilizando um exemplo prático.",
         options: [
-          "A placa-mãe é responsável por interligar todos os componentes do computador, como processador, memória RAM, HD/SSD e periféricos. Ela permite a troca de dados entre esses elementos e distribui energia, sendo essencial para o funcionamento coordenado do sistema.",
+          "O padrão MVP separa responsabilidades entre Model (dados e lógica), View (interface) e Presenter (coordenação entre ambos). Isso permite alterações em cada parte sem impactar as outras. Por exemplo, uma alteração na lógica de negócios no Presenter não exige mudanças na View. Isso facilita testes, manutenções e evolução da aplicação.",
         ],
         correct: 0,
       },
       {
         question:
-          "Por que a memória RAM é considerada volátil e qual o impacto disso no uso do computador?",
+          "Descreva como técnicas de retry e fallback podem ser utilizadas para aumentar a resiliência em uma arquitetura de microservices, com exemplos práticos.",
         options: [
-          "A memória RAM é volátil porque perde todas as informações armazenadas quando o computador é desligado. Ela é usada para guardar dados temporários enquanto o sistema está em uso, o que permite rapidez no acesso e execução de tarefas.",
+          "As técnicas de retry e fallback garantem continuidade do serviço mesmo com falhas. Retry tenta novamente uma operação após falha temporária. Fallback fornece uma alternativa quando o serviço permanece indisponível. Por exemplo, se o serviço de pagamento falhar, o sistema pode reencaminhar o pedido para uma fila ou oferecer outro meio de pagamento.",
         ],
         correct: 0,
       },
       {
         question:
-          "Qual a principal diferença entre um HD (disco rígido) e um SSD (unidade de estado sólido)?",
+          "Explique como a prática de responsabilidade compartilhada e monitoramento contínuo no DevOps contribui para a estabilidade e resiliência dos sistemas.",
         options: [
-          "A principal diferença é que o HD possui partes mecânicas e é mais lento, enquanto o SSD usa memória flash sem partes móveis, oferecendo maior velocidade, resistência a quedas e menor consumo de energia.",
+          "A responsabilidade compartilhada assegura que desenvolvedores também cuidem da operação do sistema, gerando mais atenção à qualidade. O monitoramento contínuo com ferramentas como Prometheus e Grafana permite detectar falhas rapidamente e agir proativamente. Por exemplo, se houver sobrecarga em um servidor, o sistema pode escalar recursos automaticamente.",
         ],
         correct: 0,
-      },
-      {
-        question:
-          "O que é o BIOS e qual sua importância no processo de inicialização do computador?",
-        options: [
-          "O BIOS é um firmware armazenado na placa-mãe que executa a verificação dos componentes de hardware e inicia o carregamento do sistema operacional. Sem ele, o computador não conseguiria iniciar corretamente.",
-        ],
-        correct: 0,
-      },
+      }
     ],
-
     escritaSistemas: [
       {
         question:
@@ -1240,6 +939,12 @@ const escritas = [
   },
 ];
 
+
+
+
+
+// START ------------------------------------ START \\
+
 // Embaralhar array (usado para perguntas e opções)
 function shuffleArray(array) {
   return array
@@ -1274,10 +979,10 @@ function loadQuestions(subject) {
     shuffledQuestions[index].correct = newCorrectIndex;
 
     li.innerHTML = `
-      <p class="numero">${String(index + 1).padStart(
+      </p> <p class="questao"> ${q.question}</p><p class="numero">${String(index + 1).padStart(
       2,
       "0"
-    )})</p> <p class="questao"> ${q.question}</p>
+    )}
       ${shuffledOptions
         .map(
           (option, i) => `
@@ -1359,7 +1064,7 @@ function checkAnswers() {
         `input[name='question${index}'][value='${q.correct}']`
       ).nextElementSibling;
 
-      correctLabel.style.border = "2px dashed green";
+      correctLabel.style.border = "3px dashed green";
       correctLabel.style.color = "green";
       correctLabel.style.opacity = "1"; // mantém visível
     }
