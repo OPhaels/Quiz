@@ -168,6 +168,229 @@ const questions = {
       correct: 0
     }
   ],
+  sistema: [
+    {
+    question: "O que é um sistema operacional?",
+    options: [
+      "Um tipo de aplicativo para escritório",
+      "Software que gerencia o hardware e o software de um computador",
+      "Um programa de edição de imagens",
+      "Um antivírus",
+      "Um tipo de rede local",
+    ],
+    correct: 1,
+  },
+  {
+    question: "Qual das opções abaixo é função de um sistema operacional?",
+    options: [
+      "Desenhar interfaces gráficas",
+      "Executar comandos de rede",
+      "Gerenciar recursos do sistema, como CPU, memória e armazenamento",
+      "Compactar arquivos automaticamente",
+      "Atualizar drivers de terceiros",
+    ],
+    correct: 2,
+  },
+  {
+    question: "O que é escalonamento de processos?",
+    options: [
+      "Criação de novos arquivos",
+      "Execução de backups automáticos",
+      "Escolha de qual processo será executado pela CPU",
+      "Compressão de dados da memória RAM",
+      "Limpeza de registros temporários",
+    ],
+    correct: 2,
+  },
+  {
+    question: "O que caracteriza um sistema operacional multitarefa?",
+    options: [
+      "Capacidade de trabalhar com vários usuários",
+      "Capacidade de executar vários programas ao mesmo tempo",
+      "Capacidade de rodar apenas programas gráficos",
+      "Capacidade de rodar apenas aplicativos em nuvem",
+      "Execução de tarefas exclusivamente em tempo real",
+    ],
+    correct: 1,
+  },
+  {
+    question: "Qual o papel do gerenciador de memória em um sistema operacional?",
+    options: [
+      "Controlar a interface gráfica do usuário",
+      "Monitorar o uso de processadores",
+      "Gerenciar o uso e a alocação de memória RAM",
+      "Configurar redes locais",
+      "Atualizar programas automaticamente",
+    ],
+    correct: 2,
+  },
+  {
+    question: "O que é um processo em um sistema operacional?",
+    options: [
+      "Uma instrução lógica",
+      "Uma conexão com a internet",
+      "Um programa em execução",
+      "Um arquivo de texto",
+      "Uma função de rede",
+    ],
+    correct: 2,
+  },
+  {
+    question: "Quais são os estados possíveis de um processo?",
+    options: [
+      "Novo, Pronto, Executando, Esperando, Terminado",
+      "Aberto, Em edição, Fechado",
+      "Ligado, Em espera, Desligado",
+      "Instalado, Rodando, Parado",
+      "Conectado, Desconectado, Bloqueado",
+    ],
+    correct: 0,
+  },
+  {
+    question: "O que é um deadlock?",
+    options: [
+      "Processo que termina corretamente",
+      "Erro de memória RAM",
+      "Situação em que dois ou mais processos ficam esperando indefinidamente por recursos",
+      "Atualização forçada do sistema",
+      "Desligamento inesperado",
+    ],
+    correct: 2,
+  },
+  {
+    question: "Qual é a função do sistema de arquivos?",
+    options: [
+      "Melhorar a internet do computador",
+      "Organizar e armazenar arquivos no disco",
+      "Proteger o computador contra vírus",
+      "Aumentar a velocidade da CPU",
+      "Atualizar o sistema operacional",
+    ],
+    correct: 1,
+  },
+  {
+    question: "Qual sistema operacional é baseado em código aberto?",
+    options: [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+    ],
+    correct: 2,
+  },
+  {
+    question: "O que é uma interrupção no contexto de sistemas operacionais?",
+    options: [
+      "Um erro crítico",
+      "Um comando de desligamento",
+      "Um sinal que pausa a CPU para lidar com eventos externos",
+      "Uma reinicialização automática",
+      "Um alerta sonoro do sistema",
+    ],
+    correct: 2,
+  },
+  {
+    question: "O que faz a chamada de sistema (system call)?",
+    options: [
+      "Abre aplicativos gráficos",
+      "Permite que programas de usuário solicitem serviços ao sistema operacional",
+      "Conecta o computador à internet",
+      "Aumenta a velocidade do processador",
+      "Faz backup automático de arquivos",
+    ],
+    correct: 1,
+  },
+  {
+    question: "Qual destes não é um sistema operacional?",
+    options: [
+      "Linux",
+      "Windows",
+      "Oracle",
+      "macOS",
+      "Android",
+    ],
+    correct: 2,
+  },
+  {
+    question: "Qual destes é um exemplo de sistema operacional em tempo real (RTOS)?",
+    options: [
+      "Windows 10",
+      "Linux Mint",
+      "FreeRTOS",
+      "Ubuntu",
+      "macOS Ventura",
+    ],
+    correct: 2,
+  },
+  {
+    question: "O que é o kernel do sistema operacional?",
+    options: [
+      "A interface gráfica de usuário",
+      "O programa de instalação",
+      "O núcleo do sistema, responsável por intermediar hardware e software",
+      "O nome do usuário administrador",
+      "Uma função da rede Wi-Fi",
+    ],
+    correct: 2,
+  },
+  {
+    question: "Quais são os dois tipos principais de kernel?",
+    options: [
+      "Modular e absoluto",
+      "Híbrido e lógico",
+      "Monolítico e microkernel",
+      "Virtual e real",
+      "Conectado e desconectado",
+    ],
+    correct: 2,
+  },
+  {
+    question: "O que é swapping?",
+    options: [
+      "Troca de hardware defeituoso",
+      "Transferência de arquivos para o pen drive",
+      "Movimentação de processos entre a memória principal e o disco",
+      "Desfragmentação do disco",
+      "Criação de backups automáticos",
+    ],
+    correct: 2,
+  },
+  {
+    question: "Qual destes sistemas operacionais é mais usado em smartphones?",
+    options: [
+      "Linux Fedora",
+      "Ubuntu",
+      "Android",
+      "Windows Phone",
+      "FreeBSD",
+    ],
+    correct: 2,
+  },
+  {
+    question: "Para que serve o gerenciador de dispositivos em um sistema operacional?",
+    options: [
+      "Aumentar a velocidade do disco rígido",
+      "Atualizar o sistema automaticamente",
+      "Controlar e monitorar os dispositivos conectados ao computador",
+      "Gerar relatórios de segurança",
+      "Controlar a internet",
+    ],
+    correct: 2,
+  },
+  {
+    question: "Qual a principal vantagem de um sistema operacional com interface gráfica?",
+    options: [
+      "Consome menos memória",
+      "Possui maior velocidade de rede",
+      "Facilita a interação do usuário com o sistema",
+      "Permite a execução de programas em segundo plano",
+      "Melhora a segurança contra vírus",
+    ],
+    correct: 2,
+  }
+],
+
   arquitetura: [ // atualizada
     {
       question: "Quais são as principais limitações dos bancos de dados relacionais quando se trabalha com dados não estruturados?",
@@ -851,7 +1074,7 @@ const escritas = [
         correct: 0,
       }
     ],
-    escritaSistemas: [
+    escritaSistema: [
       {
         question:
           "Explique o que é um sistema operacional e qual é sua principal função em um computador.",
@@ -1094,7 +1317,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const subjectTitles = {
     estrutura: "Estrutura de Computadores",
-    sistemas: "Sistemas Operacionais",
+    sistema: "Sistemas Operacionais",
     arquitetura: "Arquitetura de Dados Não Relacionais",
     fundamentos: "Fundamentos de Sistemas de Informação",
     programacao: "Programação para Dispositivos Móveis",
